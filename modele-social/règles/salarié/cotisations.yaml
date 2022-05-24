@@ -341,7 +341,8 @@ salarié . cotisations . CPF CDD:
   références:
     Code du travail - Article L6322-37: https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000022234996&cidTexte=LEGITEXT000006072050
 
-salarié . contribution d'équilibre général:
+salarié . cotisations . CEG:
+  titre: contribution d'équilibre général
   description: >-
     Cette cotisation créée en 2019 permet à la fois de compenser les
     charges résultant des départs à la retraite avant 67 ans et d’honorer les
@@ -352,150 +353,139 @@ salarié . contribution d'équilibre général:
     branche: retraite
     type de retraite: complémentaire
     destinataire: AGIRC-ARRCO
-  formule:
-    barème:
-      assiette: cotisations . assiette
-      multiplicateur: plafond sécurité sociale
-      composantes:
-        - attributs:
-            nom: employeur
-          tranches:
-            - taux [ref taux tranche 1]: 1.29%
-              plafond: 1
-            - taux: 1.62%
-              plafond: 8
-        - attributs:
-            nom: salarié
-          assiette: cotisations . assiette . salariale
-          tranches:
-            - taux: 0.86%
-              plafond: 1
-            - taux: 1.08%
-              plafond: 8
+  barème:
+    assiette: cotisations . assiette
+    multiplicateur: plafond sécurité sociale
+    composantes:
+      - attributs:
+          nom: employeur
+        tranches:
+          - taux [ref taux tranche 1]: 1.29%
+            plafond: 1
+          - taux: 1.62%
+            plafond: 8
+      - attributs:
+          nom: salarié
+        assiette: cotisations . assiette . salariale
+        tranches:
+          - taux: 0.86%
+            plafond: 1
+          - taux: 1.08%
+            plafond: 8
 
   références:
     calcul des cotisations: https://www.agirc-arrco.fr/ce-qui-change-au-1er-janvier-2019/vous-etes-une-entreprise-tiers-declarant/
 
-salarié . contribution d'équilibre technique:
+salarié . cotisations . CET:
+  titre: contribution d'équilibre technique
   acronyme: CET
   cotisation:
     branche: retraite
     type de retraite: complémentaire
     destinataire: AGIRC-ARRCO
   applicable si: cotisations . assiette > plafond sécurité sociale
-  formule:
-    produit:
-      assiette: cotisations . assiette
-      plafond: 8 * plafond sécurité sociale
-      composantes:
-        - attributs:
-            nom: employeur
-          taux [ref]: 0.21%
-        - attributs:
-            nom: salarié
-          taux: 0.14%
+  produit:
+    assiette: cotisations . assiette
+    plafond: 8 * plafond sécurité sociale
+    composantes:
+      - attributs:
+          nom: employeur
+        taux [ref]: 0.21%
+      - attributs:
+          nom: salarié
+        taux: 0.14%
   références:
     calcul des cotisations: https://www.agirc-arrco.fr/ce-qui-change-au-1er-janvier-2019/vous-etes-une-entreprise-tiers-declarant/
 
-salarié . retraite complémentaire:
+salarié . cotisations . retraite complémentaire:
   cotisation:
     branche: retraite
     type de retraite: complémentaire
     destinataire: AGIRC-ARRCO
   description: |
     Cotisations de retraite complémentaire.
-  formule:
-    barème:
-      assiette: cotisations . assiette
-      multiplicateur: plafond sécurité sociale
-      composantes:
-        - attributs:
-            nom: employeur
-          tranches:
-            - taux [ref taux tranche 1]: 4.72%
-              plafond: 1
-            - taux [ref taux tranche 2]: 12.95%
-              plafond: 8
-        - attributs:
-            nom: salarié
-          assiette: cotisations . assiette . salariale
-          tranches:
-            - taux [ref taux tranche 1]: 3.15%
-              plafond: 1
-            - taux [ref taux tranche 2]: 8.64%
-              plafond: 8
+  barème:
+    assiette: cotisations . assiette
+    multiplicateur: plafond sécurité sociale
+    composantes:
+      - attributs:
+          nom: employeur
+        tranches:
+          - taux [ref taux tranche 1]: 4.72%
+            plafond: 1
+          - taux [ref taux tranche 2]: 12.95%
+            plafond: 8
+      - attributs:
+          nom: salarié
+        assiette: cotisations . assiette . salariale
+        tranches:
+          - taux [ref taux tranche 1]: 3.15%
+            plafond: 1
+          - taux [ref taux tranche 2]: 8.64%
+            plafond: 8
   références:
     calcul des cotisations: https://www.agirc-arrco.fr/ce-qui-change-au-1er-janvier-2019/vous-etes-une-entreprise-tiers-declarant/
     régime des impatriés: https://www.legifrance.gouv.fr/affichTexteArticle.do;jsessionid=D2C4F8F0A5E19693ADF9F440120B748A.tplgfr31s_2?idArticle=JORFARTI000038496272&cidTexte=JORFTEXT000038496102&dateTexte=29990101&categorieLien=id
 
-salarié . retraite supplémentaire:
-  formule:
-    somme:
-      - nom: employeur
-        valeur: 0€/mois
-      - nom: salarié
-        valeur: 0€/mois
+salarié . cotisations . retraite supplémentaire:
+  somme:
+    - nom: employeur
+      valeur: 0€/mois
+    - nom: salarié
+      valeur: 0€/mois
+  avec:
+    part déductible:
+      valeur: employeur
+      abattement:
+        valeur: 5% * rémunération . brut
+        plafond: 5% * plafond sécurité sociale
+      références:
+        Article D242-1: https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000037456320&cidTexte=LEGITEXT000006073189&dateTexte=20180930
+    exonération fiscale:
+      titre: retraite supplémentaire exonérée d'impôt
+      valeur: retraite supplémentaire
+      plafond:
+        produit:
+          assiette: rémunération . brut
+          plafond: 8 * plafond sécurité sociale temps plein
+          taux: 8%
+      références:
+        Bopfip § 120: https://bofip.impots.gouv.fr/bofip/5956-PGP.html
 
-salarié . retraite supplémentaire . part déductible:
-  formule:
-    valeur: retraite supplémentaire . employeur
-    abattement: plafond d'exonération sociale employeur
-
-salarié . retraite supplémentaire . plafond d'exonération sociale employeur:
-  formule:
-    valeur: 5% * rémunération . brut
-    plafond: 5% * plafond sécurité sociale
-  références:
-    Article D242-1: https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000037456320&cidTexte=LEGITEXT000006073189&dateTexte=20180930
-
-salarié . retraite supplémentaire . exonération fiscale:
-  titre: retraite supplémentaire exonérée d'impôt
-  formule:
-    valeur: retraite supplémentaire
-    plafond:
-      produit:
-        assiette: rémunération . brut
-        plafond: 8 * plafond sécurité sociale temps plein
-        taux: 8%
-  références:
-    Bopfip § 120: https://bofip.impots.gouv.fr/bofip/5956-PGP.html
-
-salarié . AGS:
-  description: Cotisation au Régime de Garantie des Salaires
+salarié . cotisations . AGS:
+  titre: Régime de garanti des salaires (AGS)
+  description: >-
+    Cette cotisations permet de garantir les salaires des employés en cas de difficultés de l'entreprise (sauvegarde, redressement, liquidation). Elle paie les salaires sur les 60 derniers jours de travail. Elle permet de payer des préavis et des indemnités de fin de contrat.
   cotisation:
     dû par: employeur
     branche: assurance chômage
   references:
     calcul: https://www.service-public.fr/professionnels-entreprises/vosdroits/F31409
-  formule:
-    produit:
-      assiette: cotisations . assiette
-      taux: 0.15%
-      plafond: 4 * plafond sécurité sociale
+  produit:
+    assiette: cotisations . assiette
+    taux: 0.15%
+    plafond: 4 * plafond sécurité sociale
 
-salarié . allocations familiales:
+salarié . cotisations . allocations familiales:
   cotisation:
     dû par: employeur
     branche: famille
-  formule:
-    produit:
-      assiette: cotisations . assiette
-      taux [ref]:
-        variations:
-          - si: taux réduit
-            alors: 3.45%
-          - sinon: 5.25%
+  produit:
+    assiette: cotisations . assiette
+    taux:
+      nom: taux
+      variations:
+        - si: taux réduit
+          alors: 3.45%
+        - sinon: 5.25%
   références:
     calcul: https://www.urssaf.fr/portail/home/employeur/calculer-les-cotisations/les-taux-de-cotisations/la-cotisation-dallocations-famil.html
+  avec:
+    taux réduit: cotisations . assiette < temps de travail . SMIC * 3.5
 
-salarié . allocations familiales . taux réduit:
-  formule: cotisations . assiette < plafond de réduction
-
-salarié . allocations familiales . taux réduit . plafond de réduction:
-  titre: Plafond de la réduction des allocations familiales
-  formule: temps de travail . SMIC * 3.5
-
-salarié . APEC:
+salarié . cotisations . APEC:
+  titre: Association pour l’emploi des cadres
+  acronymes: APEC
   cotisation:
     branche: assurance chômage
     type de retraite: complémentaire
@@ -505,22 +495,19 @@ salarié . APEC:
     (Association Pour l’Emploi des Cadres)
   références:
     chiffres clés: http://www.agirc-arrco.fr/l-agirc-et-larrco/chiffres-cles
-
   applicable si: statut cadre
+  produit:
+    assiette: cotisations . assiette
+    plafond: 4 * plafond sécurité sociale
+    composantes:
+      - attributs:
+          nom: employeur
+        taux: 0.036%
+      - attributs:
+          nom: salarié
+        taux: 0.024%
 
-  formule:
-    produit:
-      assiette: cotisations . assiette
-      plafond: 4 * plafond sécurité sociale
-      composantes:
-        - attributs:
-            nom: employeur
-          taux: 0.036%
-        - attributs:
-            nom: salarié
-          taux: 0.024%
-
-salarié . chômage:
+salarié . cotisations . chômage:
   cotisation:
     branche: assurance chômage
     destinataire: Pôle emploi
@@ -530,19 +517,22 @@ salarié . chômage:
     calcul: http://www.pole-emploi.fr/employeur/taux-des-contributions-de-l-assurance-chomage-et-cotisations-ags-@/article.jspz?id=61567
     urssaf: https://www.urssaf.fr/portail/home/employeur/calculer-les-cotisations/les-taux-de-cotisations/lassurance-chomage-et-lags/les-taux.html
     changements 2017: https://www.urssaf.fr/portail/home/actualites/toute-lactualite-employeur/contributions-patronales-dassura.html
-  formule:
-    produit:
-      assiette: cotisations . assiette
-      plafond: 4 * plafond sécurité sociale
-      composantes:
-        - attributs:
-            nom: salarié
-          taux [ref]: 0%
-        - attributs:
-            nom: employeur
-          taux [ref]: 4.05%
+  produit:
+    assiette: cotisations . assiette
+    plafond: 4 * plafond sécurité sociale
+    composantes:
+      - attributs:
+          nom: salarié
+        taux:
+          nom: taux
+          valeur: 0%
+      - attributs:
+          nom: employeur
+        taux:
+          nom: taux
+          valeur: 4.05%
 
-salarié . complémentaire santé:
+salarié . cotisations . complémentaire santé:
   description: |
     L'Assurance maladie (Sécurité sociale) ne rembourse pas complètement vos dépenses de santé.
 
@@ -553,7 +543,6 @@ salarié . complémentaire santé:
     branche: santé
   références:
     service-public.fr: https://www.service-public.fr/particuliers/vosdroits/F20739
-  formule:
     produit:
       assiette: forfait
       composantes:
@@ -564,16 +553,6 @@ salarié . complémentaire santé:
         - attributs:
             nom: salarié
           taux: part salarié
-  exemples:
-    - nom: forfait à 40€
-      situation:
-        forfait: 40
-      valeur attendue: 40
-    - nom: forfait à 100€ payé par l'employeur
-      situation:
-        forfait: 100
-        part employeur: 100
-      valeur attendue: 100
 
 salarié . contribution au dialogue social:
   cotisation:
