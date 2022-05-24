@@ -12,8 +12,8 @@ import { createContext, useContext, useMemo } from 'react'
 import { TFunction, Trans, useTranslation } from 'react-i18next'
 import { constructLocalizedSitePath, SitePathsType } from '../../sitePaths'
 import Créer from '../Creer/Home'
-import DéclarationRevenuIndépendant from '../gerer/declaration-revenu-independants'
 import DéclarationChargeSocialeIndépendant from '../gerer/declaration-charges-sociales-independant'
+import DéclarationRevenuIndépendant from '../gerer/declaration-revenu-independants'
 import FormulaireMobilitéIndépendant from '../gerer/demande-mobilité'
 import ArtisteAuteur from './ArtisteAuteur'
 import AutoEntrepreneur from './AutoEntrepreneur'
@@ -130,7 +130,7 @@ function getSimulatorsData({
 					</Body>
 					<Body>
 						Il existe des{' '}
-						<RuleLink dottedName="contrat salarié . aides employeur">
+						<RuleLink dottedName="salarié . aides employeur">
 							aides différées
 						</RuleLink>{' '}
 						à l'embauche qui ne sont pas toutes prises en compte par notre
@@ -277,11 +277,11 @@ function getSimulatorsData({
 						Le dirigeant assimilé-salarié ne paye pas de{' '}
 						<strong>cotisations chômage</strong>. Par ailleurs, il ne bénéficie
 						pas de la{' '}
-						<RuleLink dottedName="contrat salarié . réduction générale">
+						<RuleLink dottedName="salarié . cotisations . exonérations . réduction générale">
 							réduction générale de cotisations
 						</RuleLink>{' '}
 						ni des dispositifs encadrés par le code du travail comme les{' '}
-						<RuleLink dottedName="contrat salarié . temps de travail . heures supplémentaires">
+						<RuleLink dottedName="salarié . temps de travail . heures supplémentaires">
 							heures supplémentaires
 						</RuleLink>{' '}
 						ou les primes.
@@ -428,7 +428,7 @@ function getSimulatorsData({
 					</Body>
 					<Body>
 						👉{' '}
-						<RuleLink dottedName="contrat salarié . activité partielle . indemnités">
+						<RuleLink dottedName="salarié . activité partielle . indemnités">
 							Voir le détail du calcul de l'indemnité
 						</RuleLink>
 					</Body>
@@ -445,7 +445,7 @@ function getSimulatorsData({
 					</Body>
 					<Body>
 						👉{' '}
-						<RuleLink dottedName="contrat salarié . activité partielle . indemnisation entreprise">
+						<RuleLink dottedName="salarié . activité partielle . indemnisation entreprise">
 							Voir le détail du calcul du remboursement de l'indemnité
 						</RuleLink>
 					</Body>

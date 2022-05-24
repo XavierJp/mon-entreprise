@@ -2,7 +2,7 @@ situation:
   artiste-auteur: oui
   dirigeant:
     applicable si: non
-  contrat salarié:
+  salarié:
     applicable si: non
 
 unité par défaut: €/an

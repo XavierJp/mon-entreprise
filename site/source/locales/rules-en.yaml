@@ -887,7 +887,7 @@ chômage partiel . coût employeur habituel:
 chômage partiel . revenu net habituel:
   titre.en: '[automatic] usual net income'
   titre.fr: revenu net habituel
-contrat salarié:
+salarié:
   description.en: >
     The contract that binds a company (via its establishment) to an individual,
     who is then his employee.
@@ -906,13 +906,13 @@ contrat salarié:
   question.en: What kind of contract is it?
   question.fr: De quel type de contrat s'agit-il ?
   titre.en: employment contract
-  titre.fr: contrat salarié
-contrat salarié . AGS:
+  titre.fr: salarié
+salarié . AGS:
   description.en: Contribution to the wage guarantee scheme
   description.fr: Cotisation au Régime de Garantie des Salaires
   titre.en: AGS
   titre.fr: AGS
-contrat salarié . APEC:
+salarié . APEC:
   description.en: Compulsory complementary unemployment contribution, for the
     operation of the APEC (Association for the Employment of "cadres")
   description.fr: |
@@ -920,13 +920,13 @@ contrat salarié . APEC:
     (Association Pour l’Emploi des Cadres)
   titre.en: APEC
   titre.fr: APEC
-contrat salarié . ATMP:
+salarié . ATMP:
   description.en: Contribution in respect of work accidents and occupational diseases.
   description.fr: Cotisation due au titre des Accidents du Travail et Maladies
     Professionnelles.
   titre.en: Contribution for work accidents and occupational diseases
   titre.fr: Cotisation Accidents du Travail et Maladies Professionnelles
-contrat salarié . ATMP . taux collectif ATMP:
+salarié . ATMP . taux collectif ATMP:
   description.en: >
     [automatic] Companies with fewer than 20 employees are subject to this
     collective rate. For larger companies,
@@ -941,7 +941,7 @@ contrat salarié . ATMP . taux collectif ATMP:
   question.fr: De quel domaine d'activité dépend votre entreprise ?
   titre.en: ATMP collective rate
   titre.fr: Taux collectif ATMP
-contrat salarié . ATMP . taux connu:
+salarié . ATMP . taux connu:
   description.en: >
     [automatic] The rate of the occupational accident and illness contribution
     varies according to the company's activity, to reflect the level of risk to
@@ -978,7 +978,7 @@ contrat salarié . ATMP . taux connu:
   question.fr: Connaissez-vous le taux AT/MP applicable à votre entreprise ?
   titre.en: '[automatic] known rate'
   titre.fr: taux connu
-contrat salarié . ATMP . taux minimum:
+salarié . ATMP . taux minimum:
   description.en: '[automatic] The existing minimum rate for the ATMP
     contribution. Used in particular for the calculation of the general
     reduction in contributions'
@@ -986,10 +986,10 @@ contrat salarié . ATMP . taux minimum:
     notamment pour le calcul de la réduction générale de cotisations
   titre.en: '[automatic] minimum level'
   titre.fr: taux minimum
-contrat salarié . ATMP . taux moyen:
+salarié . ATMP . taux moyen:
   titre.en: '[automatic] mean rate'
   titre.fr: taux moyen
-contrat salarié . ATMP . taux personnalisé:
+salarié . ATMP . taux personnalisé:
   description.en: >
     [automatic] Companies with more than 20 employees have an individualised
     rate. The company can consult its effective rate directly on the
@@ -1002,7 +1002,7 @@ contrat salarié . ATMP . taux personnalisé:
   question.fr: Quel est le taux AT/MP de l'entreprise ?
   titre.en: '[automatic] personalized rate'
   titre.fr: taux personnalisé
-contrat salarié . ATMP . taux réduit:
+salarié . ATMP . taux réduit:
   description.en: >
     This rate corresponds to:
       - small companies whose activity is not risky, for example IT consulting
@@ -1017,7 +1017,7 @@ contrat salarié . ATMP . taux réduit:
   question.fr: L'activité de l'établissement ou du salarié est-elle sans aucun risque ?
   titre.en: reduced rate for risk-free activity
   titre.fr: taux réduit pour activité sans risque
-contrat salarié . CDD:
+salarié . contrat . CDD:
   description.en: The employment contract explicitly provides for an end date.
   description.fr: >
     Par défaut, faire travailler quelqu'un en France établit automatiquement un
@@ -1026,17 +1026,17 @@ contrat salarié . CDD:
     Certaines situations exceptionnelles permettent aux employeurs de prévoir une date de fin. Le contrat, qui est alors nécessaire, mentionne cette date de fin.
   titre.en: Fixed term (CDD)
   titre.fr: CDD
-contrat salarié . CDD . CPF:
+salarié . contrat . CDD . CPF:
   description.en: Contribution to the financing of individual training leave,
     specific to fixed-term contracts.
   description.fr: Contribution au financement du compte personnel de formation
     (CPF) spécifique aux CDD.
   titre.en: CPF
   titre.fr: CPF
-contrat salarié . CDD . congés dus sur la durée du contrat:
+salarié . contrat . CDD . congés dus sur la durée du contrat:
   titre.en: '[automatic] leave due during the term of the contract'
   titre.fr: congés dus sur la durée du contrat
-contrat salarié . CDD . congés pris:
+salarié . contrat . CDD . congés pris:
   description.en: >
     [automatic] As the contract is for a fixed term, the employee does not
     necessarily have time to take all the days of leave that he/she has acquired
@@ -1061,7 +1061,7 @@ contrat salarié . CDD . congés pris:
   suggestions.la totalité.fr: la totalité
   titre.en: '[automatic] leave taken'
   titre.fr: congés pris
-contrat salarié . CDD . contrat jeune vacances:
+salarié . contrat . CDD . contrat jeune vacances:
   description.en:
     Also called "harvest contract". Contract concluded with a young
     person during his school or university holidays.
@@ -1074,7 +1074,7 @@ contrat salarié . CDD . contrat jeune vacances:
   question.fr: Est-ce un contrat jeune vacances ?
   titre.en: Young holiday contract
   titre.fr: Contrat jeune vacances
-contrat salarié . CDD . contrôle congés non pris max:
+salarié . contrat . CDD . contrôle congés non pris max:
   description.en: '[automatic] The number of days of leave taken is greater than
     the total number of days of leave acquired over the duration of the contract
     (by default 25 days/year)'
@@ -1083,7 +1083,7 @@ contrat salarié . CDD . contrôle congés non pris max:
     an)
   titre.en: '[automatic] check leave not taken max'
   titre.fr: contrôle congés non pris max
-contrat salarié . CDD . durée contrat:
+salarié . contrat . CDD . durée contrat:
   description.en: '[Click here]
     (https://www.service-public.fr/professionnels-entreprises/vosdroits/F31211)
     to know the maximum duration of a fixed-term contract.'
@@ -1103,7 +1103,7 @@ contrat salarié . CDD . durée contrat:
   suggestions.6 mois.fr: 6 mois
   titre.en: contract duration
   titre.fr: durée du contrat
-contrat salarié . CDD . indemnité compensatrice de congés payés:
+salarié . rémunération . indemnités CDD . congés payés:
   description.en: >
     [automatic] An employee on a fixed-term contract has the same rights to paid
     leave as an employee on a permanent contract.
@@ -1194,12 +1194,12 @@ contrat salarié . CDD . indemnité compensatrice de congés payés:
     - maintenant : Les congés peuvent être pris dès l’embauche
   titre.en: '[automatic] holiday pay'
   titre.fr: indemnité de congés payés
-contrat salarié . CDD . indemnités salarié:
+salarié . rémunération . indemnités CDD:
   description.en: '[automatic] Employer contributions specific to the CDD'
   description.fr: Cotisations employeur spécifiques au CDD
   titre.en: '[automatic] CDD allowances'
   titre.fr: Indemnités CDD
-contrat salarié . CDD . information:
+salarié . contrat . CDD . information:
   description.en: "[automatic] Remember that a fixed-term contract must always
     correspond to a temporary business need. [Labour Code - Article
     A1242-1](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGI\
@@ -1209,10 +1209,10 @@ contrat salarié . CDD . information:
     L1242-1](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000006901194&cidTexte=LEGITEXT000006072050)
   titre.en: '[automatic] information'
   titre.fr: information
-contrat salarié . CDD . jours ouvrés sur la durée du contrat:
+salarié . contrat . CDD . jours ouvrés sur la durée du contrat:
   titre.en: '[automatic] working days over the duration of the contract'
   titre.fr: jours ouvrés sur la durée du contrat
-contrat salarié . CDD . motif:
+salarié . contrat . CDD . motif:
   description.en:
     'The CDD is an exceptional contract: the reason for its use must
     be one of those specified in the law.'
@@ -1223,15 +1223,15 @@ contrat salarié . CDD . motif:
   question.fr: Quel est le motif de recours au CDD ?
   titre.en: Reason for appeal
   titre.fr: Motif de recours
-contrat salarié . CDD . motif . classique:
+salarié . contrat . CDD . motif . classique:
   titre.en: classic reasons
   titre.fr: motifs classiques
-contrat salarié . CDD . motif . classique . accroissement activité:
+salarié . contrat . CDD . motif . classique . accroissement activité:
   description.en: Temporary increase in business activity
   description.fr: Accroissement temporaire de l'activité de l'entreprise
   titre.en: Temporary increase of activity
   titre.fr: Accroissement temporaire d'activité
-contrat salarié . CDD . motif . classique . mission:
+salarié . contrat . CDD . motif . classique . mission:
   description.en: >-
     > Also called a defined object contract.
 
@@ -1250,7 +1250,7 @@ contrat salarié . CDD . motif . classique . mission:
     - Les conditions dans lesquelles les salariés sous contrat à durée déterminée à objet défini ont priorité d'accès aux emplois en contrat à durée indéterminée dans l'entreprise.
   titre.en: Mission contract
   titre.fr: Contrat de mission
-contrat salarié . CDD . motif . classique . remplacement:
+salarié . contrat . CDD . motif . classique . remplacement:
   description.en: >
     [automatic] We group the following cases in this category.
 
@@ -1283,7 +1283,7 @@ contrat salarié . CDD . motif . classique . remplacement:
     - Remplacement du chef d'une exploitation agricole ou d'une entreprise mentionnée aux 1° à 4° de l'article L. 722-1 du code rural et de la pêche maritime, d'un aide familial, d'un associé d'exploitation, ou de leur conjoint mentionné à l'article L. 722-10 du même code dès lors qu'il participe effectivement à l'activité de l'exploitation agricole ou de l'entreprise ;
   titre.en: Replacement contract
   titre.fr: Contrat de remplacement
-contrat salarié . CDD . motif . classique . saisonnier:
+salarié . contrat . CDD . motif . classique . saisonnier:
   description.en: Seasonal jobs, the tasks of which are to be repeated each year
     at a roughly fixed frequency, according to the rhythm of the seasons or the
     collective way of life.
@@ -1293,7 +1293,7 @@ contrat salarié . CDD . motif . classique . saisonnier:
     du rythme des saisons ou des modes de vie collectifs.
   titre.en: Seasonal
   titre.fr: Saisonnier
-contrat salarié . CDD . motif . classique . usage:
+salarié . contrat . CDD . motif . classique . usage:
   description.en:
     Jobs for which, in certain sectors of activity defined by decree
     or by collective agreement, a permanent contract is generally not used
@@ -1307,7 +1307,7 @@ contrat salarié . CDD . motif . classique . usage:
     par nature temporaire de ces emplois ;
   titre.en: Customary contract
   titre.fr: Contrat d'usage
-contrat salarié . CDD . motif . complément formation:
+salarié . contrat . CDD . motif . complément formation:
   description.en: The employer undertakes, for a period and under conditions
     determined by decree, to provide additional professional training to the
     employee.
@@ -1316,10 +1316,10 @@ contrat salarié . CDD . motif . complément formation:
     au salarié.
   titre.en: Complementary professional training provided by the employer
   titre.fr: Complément de formation professionnelle
-contrat salarié . CDD . motif . contrat aidé:
+salarié . contrat . CDD . motif . contrat aidé:
   titre.en: Aided contract (CUI, work-study , ...)
   titre.fr: Contrat aidé (CUI, alternance, ...)
-contrat salarié . CDD . motif . issue d'apprentissage:
+salarié . contrat . CDD . motif . issue d'apprentissage:
   description.en: At the end of an apprenticeship contract, a fixed-term
     employment contract may be concluded when the apprentice has to fulfill the
     obligations of the national service within a period of less than one year
@@ -1331,7 +1331,7 @@ contrat salarié . CDD . motif . issue d'apprentissage:
     l'expiration du contrat d'apprentissage.
   titre.en: End of an apprenticeship contract
   titre.fr: À l'issue d'un contrat d'apprentissage
-contrat salarié . CDD . prime de fin de contrat:
+salarié . contrat . CDD . prime de fin de contrat:
   description.en:
     Amount paid at the end of fixed-term contracts as a compensation
     for precariousness.
@@ -1348,7 +1348,7 @@ contrat salarié . CDD . prime de fin de contrat:
     - Dans les faits, les CDD Senior perçoivent une indemnité d’un montant équivalent à l’indemnité de précarité : [line](https://www.easycdd.com/LEGISLATION-CDD/Fin-ou-rupture-du-contrat-CDD/La-prime-de-precarite/La-prime-de-precarite-n-est-pas-due-si)
   titre.en: End of contract bonus
   titre.fr: prime de fin de contrat
-contrat salarié . CDD . événement:
+salarié . contrat . CDD . événement:
   description.en: >-
     Some events have a strong impact on the financial obligations of the
     fixed-term contract.
@@ -1364,13 +1364,13 @@ contrat salarié . CDD . événement:
   question.fr: Pensez-vous être confronté à l'un de ces événements au cours du contrat ?
   titre.en: Contract related event
   titre.fr: Événement de contrat
-contrat salarié . CDD . événement . poursuite du CDD en CDI:
+salarié . contrat . CDD . événement . poursuite du CDD en CDI:
   description.en: At the end of the fixed-term contract, without interruption, a
     permanent contract is signed.
   description.fr: En fin de contrat, le CDD est reconduit en CDI sans interruption.
   titre.en: Fixed-term contract continued as permanent
   titre.fr: Poursuite du CDD en CDI
-contrat salarié . CDD . événement . refus CDI avantageux:
+salarié . contrat . CDD . événement . refus CDI avantageux:
   description.en: The employee, at the end of the fixed-term contract, refuses a
     renewal on an open-ended contract for a similar job, with a remuneration at
     least as advantageous.
@@ -1379,21 +1379,21 @@ contrat salarié . CDD . événement . refus CDI avantageux:
     un emploi similaire, et une rémunération au moins aussi avantageuse.
   titre.en: Refusal of a favourable permanent contract
   titre.fr: Refus d'un CDI avantageux
-contrat salarié . CDD . événement . rupture anticipée salarié:
+salarié . contrat . CDD . événement . rupture anticipée salarié:
   description.en: Early termination of the contract at the initiative of the employee.
   description.fr: Rupture anticipée du contrat à l'initiative du salarié.
   titre.en: Early termination by the employee
   titre.fr: Rupture anticipée du salarié
-contrat salarié . CDD . événement . rupture pendant période essai:
+salarié . contrat . CDD . événement . rupture pendant période essai:
   titre.en: Breaking during the trial period
   titre.fr: Rupture pendant la période d'essai
-contrat salarié . CDD . événement . rupture pour faute grave ou force majeure:
+salarié . contrat . CDD . événement . rupture pour faute grave ou force majeure:
   titre.en: Breaking for serious misconduct or force majeure
   titre.fr: Rupture pour faute grave ou force majeure
-contrat salarié . CDI:
+salarié . contrat . CDI:
   titre.en: CDI
   titre.fr: CDI
-contrat salarié . CSG et CRDS:
+salarié . CSG et CRDS:
   description.en: >-
     [automatic] The CSG and the CRDS are payable by all employees meeting the
     following two conditions:
@@ -1410,12 +1410,12 @@ contrat salarié . CSG et CRDS:
     Si l’un des deux critères n’est pas rempli, la CSG et la CRDS ne sont pas dues, à la condition d’en apporter la preuve (justificatif fiscal ou carte d’assuré social).
   titre.en: '[automatic] CSG and CRDS'
   titre.fr: CSG et CRDS
-contrat salarié . CSG et CRDS . CRDS:
+salarié . CSG et CRDS . CRDS:
   description.en: '[automatic] Contribution for the repayment of the social debt'
   description.fr: Contribution pour le remboursement de la dette sociale
   titre.en: '[automatic] DRES'
   titre.fr: CRDS
-contrat salarié . CSG et CRDS . CSG:
+salarié . CSG et CRDS . CSG:
   description.en: >-
     [automatic] The General Social Contribution (CSG) is a tax intended to
     contribute to the financing of social protection.
@@ -1436,22 +1436,22 @@ contrat salarié . CSG et CRDS . CSG:
     Le produit de la CSG est reversé à la Cnam et à la Cnaf, il finance également le fonds de solidarité vieillesse
   titre.en: '[automatic] CSG'
   titre.fr: CSG
-contrat salarié . CSG et CRDS . assiette abattue totale:
+salarié . CSG et CRDS . assiette abattue totale:
   titre.en: '[automatic] total slaughter plate'
   titre.fr: assiette abattue totale
-contrat salarié . CSG et CRDS . assiette de base:
+salarié . CSG et CRDS . assiette de base:
   titre.en: '[automatic] base plate'
   titre.fr: assiette de base
-contrat salarié . CSG et CRDS . assiette heures supplémentaires et complémentaires défiscalisées:
+salarié . CSG et CRDS . assiette heures supplémentaires et complémentaires défiscalisées:
   titre.en: '[automatic] tax-free overtime and additional hours base'
   titre.fr: assiette heures supplémentaires et complémentaires défiscalisées
-contrat salarié . CSG et CRDS . assiette revenu remplacements:
+salarié . CSG et CRDS . assiette revenu remplacements:
   titre.en: '[automatic] income base replacements'
   titre.fr: assiette revenu remplacements
-contrat salarié . CSG et CRDS . non déductible:
+salarié . CSG et CRDS . non déductible:
   titre.en: '[automatic] Non-deductible CSG and CRDS'
   titre.fr: CSG non déductible et CRDS
-contrat salarié . CSG et CRDS . revenus de remplacement:
+salarié . CSG et CRDS . revenus de remplacement:
   description.en: '[automatic] CSG and CRDS deducted from replacement income.'
   description.fr: La CSG et CRDS prélevées sur les revenus de remplacement.
   note.en: '[automatic] The levying of the CSG and the CRDS may not have the
@@ -1463,16 +1463,16 @@ contrat salarié . CSG et CRDS . revenus de remplacement:
     chômage à un seuil inférieur au Smic brut.
   titre.en: '[automatic] CSG and CRDS replacement income'
   titre.fr: CSG et CRDS revenus de remplacement
-contrat salarié . CSG et CRDS . revenus de remplacement . CRDS:
+salarié . CSG et CRDS . revenus de remplacement . CRDS:
   titre.en: '[automatic] CRDS replacement income'
   titre.fr: CRDS revenus de remplacement
-contrat salarié . CSG et CRDS . revenus de remplacement . CSG déductible:
+salarié . CSG et CRDS . revenus de remplacement . CSG déductible:
   titre.en: '[automatic] Deductible MSA replacement income'
   titre.fr: CSG déductible revenus de remplacement
-contrat salarié . CSG et CRDS . revenus de remplacement . CSG non déductible:
+salarié . CSG et CRDS . revenus de remplacement . CSG non déductible:
   titre.en: '[automatic] Non-deductible CSG replacement income'
   titre.fr: CSG non déductible revenus de remplacement
-contrat salarié . FNAL:
+salarié . FNAL:
   description.en:
     The National Housing Fund (Fnal) is a contribution to ensure the
     financing of the housing allowance.
@@ -1481,10 +1481,10 @@ contrat salarié . FNAL:
     le financement de l’allocation logement.
   titre.en: Contribution to the National Fund for Housing Assistance
   titre.fr: Contribution au Fonds National d’Aide au Logement
-contrat salarié . FNAL . éligible taux réduit:
+salarié . FNAL . éligible taux réduit:
   titre.en: '[automatic] eligible reduced rate'
   titre.fr: éligible taux réduit
-contrat salarié . SMIC:
+salarié . SMIC:
   description.en: >
     [automatic] Several contribution reductions ([general
     reduction](/documentation/employee contract/general reduction), reduced
@@ -1514,7 +1514,7 @@ contrat salarié . SMIC:
     compte sans tenir compte de la majoration.
   titre.en: minimum wage (SMIC)
   titre.fr: SMIC
-contrat salarié . SMIC contractuel:
+salarié . contrat . temps de travail . SMIC:
   description.en: >
     Value of the pro-ratized minimum wage (SMIC) to take into account part-time
     work and used to determine the minimum wage
@@ -1522,8 +1522,8 @@ contrat salarié . SMIC contractuel:
     Valeur du SMIC pro-ratisé pour prendre en compte le temps partiel et utilisé
     pour la détermination du salaire minimum
   titre.en: Contractual minimum wage (SMIC)
-  titre.fr: SMIC contractuel
-contrat salarié . activité partielle:
+  titre.fr: contrat . temps de travail . SMIC
+salarié . activité partielle:
   description.en: >-
     [automatic] Following the Coronavirus crisis, the government introduced an
     extended short-time working scheme in which the state pays compensation for
@@ -1538,7 +1538,7 @@ contrat salarié . activité partielle:
     La déclaration d'activité partielle est simplifiée et l'effet est rétroactif.
   titre.en: '[automatic] partial activity'
   titre.fr: activité partielle
-contrat salarié . activité partielle . convention syntec:
+salarié . activité partielle . convention syntec:
   description.en: >-
     [automatic] Collective bargaining agreement applicable to employees of
     Technical Design Offices, Engineering Consultancy Firms and Consulting
@@ -1554,10 +1554,10 @@ contrat salarié . activité partielle . convention syntec:
   question.fr: La convention collective Syntec est-elle applicable à l'entreprise ?
   titre.en: '[automatic] syntec convention'
   titre.fr: convention syntec
-contrat salarié . activité partielle . heures chômées:
+salarié . activité partielle . heures chômées:
   titre.en: '[automatic] non-working hours'
   titre.fr: heures chômées
-contrat salarié . activité partielle . heures travaillées:
+salarié . activité partielle . heures travaillées:
   description.en: '[automatic] In the case of short-time working, the number of
     remaining hours worked. Must be less than the contractual time.'
   description.fr: Dans le cadre du chômage partiel, le nombre d'heure restantes
@@ -1572,7 +1572,7 @@ contrat salarié . activité partielle . heures travaillées:
   suggestions.30 h/semaine.fr: 30 h/semaine
   titre.en: '[automatic] remaining hours worked'
   titre.fr: heures travaillées restantes
-contrat salarié . activité partielle . heures travaillées . contrôle temps de travail:
+salarié . activité partielle . heures travaillées . contrôle temps de travail:
   description.en:
     '[automatic] In the context of the partial activity, the working
     time must be less than that stipulated in the employment contract.'
@@ -1581,7 +1581,7 @@ contrat salarié . activité partielle . heures travaillées . contrôle temps d
     être inférieur à celui inscrit dans le contrat de travail.
   titre.en: '[automatic] working-time control'
   titre.fr: contrôle temps de travail
-contrat salarié . activité partielle . indemnisation entreprise:
+salarié . activité partielle . indemnisation entreprise:
   description.en: '[automatic] In the context of the Coronavirus crisis, the
     government announced that the partial unemployment benefit for closed
     businesses will be paid 100% by the state.'
@@ -1590,7 +1590,7 @@ contrat salarié . activité partielle . indemnisation entreprise:
     prise à 100% en charge par l'état.
   titre.en: '[automatic] Reimbursement of partial activity allowance'
   titre.fr: Remboursement de l'indemnité d'activité partielle
-contrat salarié . activité partielle . indemnisation entreprise . taux d'indemnisation:
+salarié . activité partielle . indemnisation entreprise . taux d'indemnisation:
   description.en:
     '[automatic] During the period of reduced activity, the employer
     receives from the Agency for Services and Payment (ASP) an allowance
@@ -1606,7 +1606,7 @@ contrat salarié . activité partielle . indemnisation entreprise . taux d'indem
     période durant laquelle il est placé en activité partielle.
   titre.en: '[automatic] allocation rate'
   titre.fr: taux d'allocation
-contrat salarié . activité partielle . indemnités:
+salarié . activité partielle . indemnités:
   description.en: >-
     [automatic] If you are placed on short-time work, you are not entitled to a
     salary but to a special allowance. For each hour of compensable time off,
@@ -1623,10 +1623,10 @@ contrat salarié . activité partielle . indemnités:
     Si après versement de l’indemnité d’activité partielle la rémunération du salarié est inférieure à la rémunération mensuelle minimale (RMM garantie par les articles L3232-1 et suivants du code du travail pour les salariés à temps plein), l'employeur doit  lui verser une allocation complémentaire qui est égale à la différence entre la rémunération mensuelle minimale (ou Smic net) et la somme initialement perçue par le salarié.
   titre.en: '[automatic] partial activity compensation'
   titre.fr: indemnités activité partielle
-contrat salarié . activité partielle . indemnités . base:
+salarié . activité partielle . indemnités . base:
   titre.en: '[automatic] basic partial severance pay'
   titre.fr: indemnités d'activité partielle de base
-contrat salarié . activité partielle . indemnités . complémentaire:
+salarié . activité partielle . indemnités . complémentaire:
   description.en:
     '[automatic] The supplementary partial unemployment allowance is
     an allowance paid by the company for salaries close to the SMIC to ensure
@@ -1637,16 +1637,16 @@ contrat salarié . activité partielle . indemnités . complémentaire:
     inférieure à celle du SMIC net.
   titre.en: '[automatic] additional allowance'
   titre.fr: indemnité complémentaire
-contrat salarié . activité partielle . indemnités . conventionnelle:
+salarié . activité partielle . indemnités . conventionnelle:
   titre.en: '[automatic] conventional'
   titre.fr: conventionnelle
-contrat salarié . activité partielle . indemnités . conventionnelle . part soumise à cotisation:
+salarié . activité partielle . indemnités . conventionnelle . part soumise à cotisation:
   titre.en: '[automatic] contributable portion'
   titre.fr: part soumise à cotisation
-contrat salarié . activité partielle . retrait absence:
+salarié . activité partielle . retrait absence:
   titre.en: '[automatic] partial activity withdrawal'
   titre.fr: retrait activité partielle
-contrat salarié . activité partielle . rémunération mensuelle minimale:
+salarié . activité partielle . rémunération mensuelle minimale:
   description.en:
     '[automatic] Full-time employees with reduced working hours are
     entitled to a minimum monthly remuneration which may be supplemented by an
@@ -1657,7 +1657,7 @@ contrat salarié . activité partielle . rémunération mensuelle minimale:
     versement complémentaire de l’employeur.
   titre.en: '[automatic] minimum monthly pay'
   titre.fr: rémunération mensuelle minimale
-contrat salarié . activité partielle . secteur d'activité restreint:
+salarié . activité partielle . secteur d'activité restreint:
   description.en: >-
     [automatic] Companies whose activity has been interrupted by administrative
     decision as a result of the health crisis, or which are located in a
@@ -1703,7 +1703,7 @@ contrat salarié . activité partielle . secteur d'activité restreint:
     événementiel)"
   titre.en: '[automatic] narrow focus'
   titre.fr: secteur d'activité restreint
-contrat salarié . aides employeur:
+salarié . aides employeur:
   description.en: >
     [automatic] This aid is known as deferred aid because it does not consist of
     a simple reduction in monthly contributions: it will be granted a
@@ -1722,7 +1722,7 @@ contrat salarié . aides employeur:
   résumé.fr: Pour l'employeur, différées dans le temps
   titre.en: '[automatic] employer assistance'
   titre.fr: aides employeur
-contrat salarié . aides employeur . aide à l'embauche d'apprentis:
+salarié . aides employeur . aide à l'embauche d'apprentis:
   description.en: >
     Since 2019, a single hiring aid has replaced four previous schemes. The
     amount of aid depends on the length of the contract.
@@ -1736,7 +1736,7 @@ contrat salarié . aides employeur . aide à l'embauche d'apprentis:
     Une fois les démarches d'enregistrement effectuées, l'aide est versée automatiquement tous les mois.
   titre.en: aid to hire apprentices
   titre.fr: aide à l'embauche d'apprentis
-contrat salarié . aides employeur . aide à l'embauche senior professionnalisation:
+salarié . aides employeur . aide à l'embauche senior professionnalisation:
   description.en: |
     [automatic] Employers can get €2,000 for the hiring of an
     jobseekers over 45 years of age on a professionalization contract.
@@ -1745,7 +1745,7 @@ contrat salarié . aides employeur . aide à l'embauche senior professionnalisat
     demandeur d'emploi de plus de 45 ans en contrat de professionnalisation.
   titre.en: '[automatic] senior professionalization hiring assistance'
   titre.fr: aide à l'embauche senior professionnalisation
-contrat salarié . aides employeur . aides à l'embauche:
+salarié . aides employeur . aides à l'embauche:
   description.en: >
     [automatic] The State provides aid to encourage the hiring of certain
     priority groups. This aid cannot be combined with other aid.
@@ -1754,7 +1754,7 @@ contrat salarié . aides employeur . aides à l'embauche:
     prioritaires. Ces aides sont non cumulables entre elles.
   titre.en: '[automatic] hiring aids'
   titre.fr: aides à l'embauche
-contrat salarié . aides employeur . emploi franc:
+salarié . aides employeur . emploi franc:
   description.en: >
     [automatic] Deferred aid paid by Pôle emploi for the hiring of a job seeker
 
@@ -1785,7 +1785,7 @@ contrat salarié . aides employeur . emploi franc:
     [🗺 Vérifier l'éligibilité d'une adresse](https://sig.ville.gouv.fr/recherche-adresses-qp-polville)
   titre.en: '[automatic] open job'
   titre.fr: emploi franc
-contrat salarié . aides employeur . emploi franc . éligible:
+salarié . aides employeur . emploi franc . éligible:
   description.en: >
     [automatic] Conditions:
 
@@ -1806,19 +1806,19 @@ contrat salarié . aides employeur . emploi franc . éligible:
   question.fr: Cette embauche est-elle éligible à l'aide emploi-franc ?
   titre.en: '[automatic] eligibility for open employment assistance'
   titre.fr: éligibilité à l'aide emploi franc
-contrat salarié . allocations familiales:
+salarié . allocations familiales:
   titre.en: Family allowances
   titre.fr: allocations familiales
-contrat salarié . allocations familiales . taux réduit:
+salarié . allocations familiales . taux réduit:
   titre.en: reduced rate
   titre.fr: taux réduit
-contrat salarié . allocations familiales . taux réduit . plafond de réduction:
+salarié . allocations familiales . taux réduit . plafond de réduction:
   titre.en: Ceiling on the reduction of family allowances
   titre.fr: Plafond de la réduction des allocations familiales
-contrat salarié . ancienneté:
+salarié . ancienneté:
   titre.en: '[automatic] seniority'
   titre.fr: ancienneté
-contrat salarié . ancienneté . date d'embauche:
+salarié . contrat . date d'embauche:
   question.en: "[automatic] What is the employee's hiring date?"
   question.fr: Quelle est la date d'embauche du salarié ?
   suggestions.Début 2020.en: '[automatic] Early 2020'
@@ -1829,7 +1829,7 @@ contrat salarié . ancienneté . date d'embauche:
   suggestions.Fin 2017.fr: Fin 2017
   titre.en: '[automatic] hire date'
   titre.fr: date d'embauche
-contrat salarié . apprentissage:
+salarié . contrat . apprentissage:
   description.en: >
     An apprenticeship contract is a written employment contract of limited
     duration (CDD) or indefinite duration (CDI) between an employee and an
@@ -1844,18 +1844,18 @@ contrat salarié . apprentissage:
     apprentis (CFA) pendant 1 à 3 ans.
   titre.en: apprenticeship
   titre.fr: apprentissage
-contrat salarié . apprentissage . ancienneté:
+salarié . contrat . apprentissage . ancienneté:
   question.en: How long has the apprentice been employed?
   question.fr: Depuis combien de temps l'apprenti est-il employé ?
   titre.en: age
   titre.fr: ancienneté
-contrat salarié . apprentissage . ancienneté . moins d'un an:
+salarié . contrat . apprentissage . ancienneté . moins d'un an:
   titre.en: less than one year
   titre.fr: moins d'un an
-contrat salarié . apprentissage . ancienneté . moins de deux ans:
+salarié . contrat . apprentissage . ancienneté . moins de deux ans:
   titre.en: less than two years
   titre.fr: moins de deux ans
-contrat salarié . apprentissage . ancienneté . moins de quatre ans:
+salarié . contrat . apprentissage . ancienneté . moins de quatre ans:
   description.en: '[automatic] The maximum duration of the contract may be
     extended to 4 years when the apprentice is recognised as a disabled worker.'
   description.fr:
@@ -1863,22 +1863,22 @@ contrat salarié . apprentissage . ancienneté . moins de quatre ans:
     qualité de travailleur handicapé est reconnue à l'apprenti.
   titre.en: less than four years
   titre.fr: moins de quatre ans
-contrat salarié . apprentissage . ancienneté . moins de trois ans:
+salarié . contrat . apprentissage . ancienneté . moins de trois ans:
   titre.en: less than three years
   titre.fr: moins de trois ans
-contrat salarié . apprentissage . diplôme préparé:
+salarié . contrat . apprentissage . diplôme préparé:
   question.en: What type of degree is the apprentice preparing for?
   question.fr: Quel type de diplôme l'apprenti prépare-t-il ?
   titre.en: degree prepared
   titre.fr: diplôme préparé
-contrat salarié . apprentissage . diplôme préparé . niveau bac ou moins:
+salarié . contrat . apprentissage . diplôme préparé . niveau bac ou moins:
   description.en: Concerns level V (CAP, BEP, CTM...) and level IV (Bac Pro, BP, BTM) diplomas
   description.fr:
     Concerne les diplôme de niveau V (CAP, BEP, CTM...) et de niveau
     IV (Bac Pro, BP, BTM)
   titre.en: Degree of a level less than or equal to the baccalaureate
   titre.fr: Diplôme d'un niveau inférieur ou égal au bac
-contrat salarié . apprentissage . diplôme préparé . niveau supérieur au bac:
+salarié . contrat . apprentissage . diplôme préparé . niveau supérieur au bac:
   description.en:
     Concerns level I (Master, Engineer, Grandes écoles...), level II
     (Licence, BMS...), and level III (BTS, SUT, BM, ...) diplomas
@@ -1887,7 +1887,7 @@ contrat salarié . apprentissage . diplôme préparé . niveau supérieur au bac
     ...)
   titre.en: Degree above the baccalaureate level
   titre.fr: Diplôme d'un niveau supérieur au bac
-contrat salarié . avantages sociaux:
+salarié . avantages sociaux:
   description.en: These are the benefits paid by the employer. They are specific
     to the company, and provided by private structures. They are subject to
     income taxes.
@@ -1897,12 +1897,12 @@ contrat salarié . avantages sociaux:
     assurance...). Ils sont soumis à l'impôt sur le revenu.
   titre.en: employee benefits
   titre.fr: avantages sociaux
-contrat salarié . chômage:
+salarié . chômage:
   description.en: Unemployment insurance contribution
   description.fr: Cotisation d’assurance chômage
   titre.en: unemployment
   titre.fr: chômage
-contrat salarié . complémentaire santé:
+salarié . complémentaire santé:
   description.en: >
     Health Insurance (Social Security) does not fully reimburse your health
     expenses.
@@ -1923,7 +1923,7 @@ contrat salarié . complémentaire santé:
     En plus de la complémentaire santé, le dispositif collectif de l'entreprise peut proposer d'autres garanties (garanties décès, garantie dépendance, etc.).
   titre.en: Complementary health insurance
   titre.fr: complémentaire santé
-contrat salarié . complémentaire santé . contrôle min:
+salarié . complémentaire santé . contrôle min:
   description.en: '[automatic] Make sure that such an inexpensive health
     supplement covers the minimum care basket defined by law.'
   description.fr:
@@ -1931,7 +1931,7 @@ contrat salarié . complémentaire santé . contrôle min:
     panier de soin minimal défini dans la loi.
   titre.en: '[automatic] minimum control'
   titre.fr: contrôle min
-contrat salarié . complémentaire santé . forfait:
+salarié . complémentaire santé . forfait:
   description.en: >-
     [automatic] The employer is obliged to offer a complementary health
     insurance. The employer must cover at least half of the cost of the
@@ -1966,7 +1966,7 @@ contrat salarié . complémentaire santé . forfait:
   suggestions.élevé.fr: élevé
   titre.en: Complementary health insurance package
   titre.fr: Forfait de complémentaire santé entreprise
-contrat salarié . complémentaire santé . part employeur:
+salarié . complémentaire santé . part employeur:
   description.en: Share of complementary health insurance paid by the employer.
     Must be at least 50%.
   description.fr:
@@ -1980,13 +1980,13 @@ contrat salarié . complémentaire santé . part employeur:
   suggestions.50%.fr: 50%
   titre.en: employer share
   titre.fr: part employeur
-contrat salarié . complémentaire santé . part employeur min:
+salarié . complémentaire santé . part employeur min:
   description.en: "[automatic] The employer's share of the supplementary health
     insurance must be at least 50%."
   description.fr: La part employeur de la complémentaire santé doit être de 50% au minimum
   titre.en: "[automatic] employer's minimum share"
   titre.fr: part employeur min
-contrat salarié . complémentaire santé . part salarié:
+salarié . complémentaire santé . part salarié:
   description.en: Share of the complementary health insurance paid by the
     employee. Cannot be more than 50%.
   description.fr:
@@ -1994,7 +1994,7 @@ contrat salarié . complémentaire santé . part salarié:
     être supérieure à 50%
   titre.en: employee share
   titre.fr: part salarié
-contrat salarié . contribution au dialogue social:
+salarié . contribution au dialogue social:
   description.en: >-
     Employers' contribution intended to supplement a joint fund dedicated to the
     financing of trade union organizations and professional organizations of
@@ -2011,7 +2011,7 @@ contrat salarié . contribution au dialogue social:
     Anciennement 'contribution patronale au financement des organisations syndicales'
   titre.en: Contribution to social dialogue
   titre.fr: contribution au dialogue social
-contrat salarié . contribution d'équilibre général:
+salarié . contribution d'équilibre général:
   description.en:
     This contribution, created in 2019, makes it possible to offset
     the expenses resulting from retirements before age 67 and to honour the
@@ -2024,15 +2024,15 @@ contrat salarié . contribution d'équilibre général:
     cotisation de compensation pour les cadres.
   titre.en: general equilibrium contribution
   titre.fr: contribution d'équilibre général
-contrat salarié . contribution d'équilibre technique:
+salarié . contribution d'équilibre technique:
   titre.en: technical equilibrium contribution
   titre.fr: contribution d'équilibre technique
-contrat salarié . convention collective:
+salarié . convention collective:
   question.en: '[automatic] Which collective agreement is applicable to the company?'
   question.fr: Quelle convention collective est applicable à l'entreprise ?
   titre.en: convention collective
   titre.fr: convention collective
-contrat salarié . convention collective . BTP:
+salarié . convention collective . BTP:
   description.en: '[automatic] The company depends on the national collective
     agreement for the building industry. This agreement defines three categories
     of employees: blue-collar workers, ETAMs (employees, technicians and
@@ -2043,21 +2043,21 @@ contrat salarié . convention collective . BTP:
     cadres."
   titre.en: '[automatic] Building'
   titre.fr: Bâtiment
-contrat salarié . convention collective . BTP . OPPBTP:
+salarié . convention collective . BTP . OPPBTP:
   titre.en: '[automatic] OPPBTP'
   titre.fr: OPPBTP
-contrat salarié . convention collective . BTP . catégorie:
+salarié . convention collective . BTP . catégorie:
   question.en: '[automatic] To which category does the employee belong?'
   question.fr: À quelle catégorie la salarié appartient-t'il ?
   titre.en: '[automatic] category'
   titre.fr: catégorie
-contrat salarié . convention collective . BTP . catégorie . cadre:
+salarié . convention collective . BTP . catégorie . cadre:
   titre.en: '[automatic] Framework'
   titre.fr: Cadre
-contrat salarié . convention collective . BTP . catégorie . cadre . prévoyance complémentaire:
+salarié . convention collective . BTP . catégorie . cadre . prévoyance complémentaire:
   titre.en: '[automatic] supplementary pension'
   titre.fr: prévoyance complémentaire
-contrat salarié . convention collective . BTP . catégorie . etam:
+salarié . convention collective . BTP . catégorie . etam:
   description.en: '[automatic] Employee, technician, master angel'
   description.fr: Employé, technicien, angent de maîtrise
   note.en: '[automatic] Conventional distribution fixed by Article 5 of the
@@ -2067,19 +2067,19 @@ contrat salarié . convention collective . BTP . catégorie . etam:
     13 décembre 1990.
   titre.en: '[automatic] ETAM'
   titre.fr: ETAM
-contrat salarié . convention collective . BTP . catégorie . etam . prévoyance complémentaire:
+salarié . convention collective . BTP . catégorie . etam . prévoyance complémentaire:
   titre.en: '[automatic] supplementary pension'
   titre.fr: prévoyance complémentaire
-contrat salarié . convention collective . BTP . catégorie . ouvrier:
+salarié . convention collective . BTP . catégorie . ouvrier:
   titre.en: '[automatic] Worker'
   titre.fr: Ouvrier
-contrat salarié . convention collective . BTP . catégorie . ouvrier . prévoyance complémentaire:
+salarié . convention collective . BTP . catégorie . ouvrier . prévoyance complémentaire:
   titre.en: '[automatic] supplementary pension'
   titre.fr: prévoyance complémentaire
-contrat salarié . convention collective . BTP . congés intempéries:
+salarié . convention collective . BTP . congés intempéries:
   titre.en: '[automatic] bad weather'
   titre.fr: congés intempéries
-contrat salarié . convention collective . BTP . congés intempéries . caisse de rattachement:
+salarié . convention collective . BTP . congés intempéries . caisse de rattachement:
   question.en:
     '[automatic] To which fund is the company attached for the payment
     of the bad weather contribution?'
@@ -2087,51 +2087,51 @@ contrat salarié . convention collective . BTP . congés intempéries . caisse d
     de la cotisation congés intempéries ?
   titre.en: '[automatic] home office fund'
   titre.fr: caisse de rattachement
-contrat salarié . convention collective . BTP . congés intempéries . caisse de rattachement . centre:
+salarié . convention collective . BTP . congés intempéries . caisse de rattachement . centre:
   titre.en: '[automatic] centre'
   titre.fr: centre
-contrat salarié . convention collective . BTP . congés intempéries . caisse de rattachement . centre ouest:
+salarié . convention collective . BTP . congés intempéries . caisse de rattachement . centre ouest:
   titre.en: '[automatic] western center'
   titre.fr: centre ouest
-contrat salarié . convention collective . BTP . congés intempéries . caisse de rattachement . grand est:
+salarié . convention collective . BTP . congés intempéries . caisse de rattachement . grand est:
   titre.en: '[automatic] great east'
   titre.fr: grand est
-contrat salarié . convention collective . BTP . congés intempéries . caisse de rattachement . grand ouest:
+salarié . convention collective . BTP . congés intempéries . caisse de rattachement . grand ouest:
   titre.en: '[automatic] great west'
   titre.fr: grand ouest
-contrat salarié . convention collective . BTP . congés intempéries . caisse de rattachement . idf:
+salarié . convention collective . BTP . congés intempéries . caisse de rattachement . idf:
   titre.en: '[automatic] Île-de-France'
   titre.fr: Île-de-France
-contrat salarié . convention collective . BTP . congés intempéries . caisse de rattachement . méditerranée:
+salarié . convention collective . BTP . congés intempéries . caisse de rattachement . méditerranée:
   titre.en: '[automatic] mediterranean'
   titre.fr: méditerranée
-contrat salarié . convention collective . BTP . congés intempéries . caisse de rattachement . nord ouest:
+salarié . convention collective . BTP . congés intempéries . caisse de rattachement . nord ouest:
   titre.en: '[automatic] northwest'
   titre.fr: nord ouest
-contrat salarié . convention collective . BTP . congés intempéries . caisse de rattachement . rhône alpes auvergne:
+salarié . convention collective . BTP . congés intempéries . caisse de rattachement . rhône alpes auvergne:
   titre.en: '[automatic] rhône alpes auvergne'
   titre.fr: rhône alpes auvergne
-contrat salarié . convention collective . BTP . congés intempéries . caisse de rattachement . sud ouest:
+salarié . convention collective . BTP . congés intempéries . caisse de rattachement . sud ouest:
   titre.en: '[automatic] southwest'
   titre.fr: sud ouest
-contrat salarié . convention collective . BTP . cotisations conventionnelles:
+salarié . convention collective . BTP . cotisations employeur:
   titre.en: '[automatic] conventional contributions'
   titre.fr: cotisations conventionnelles
-contrat salarié . convention collective . HCR:
+salarié . convention collective . HCR:
   description.en: The company is a hotel, café, restaurant or similar.
   description.fr: L'entreprise est un hôtel, café, restaurant ou assimilé.
   titre.en: '[automatic] hotels, cafés and restaurants HCR'
   titre.fr: hôtels, cafés restaurants HCR
-contrat salarié . convention collective . HCR . majoration heures supplémentaires:
+salarié . convention collective . HCR . majoration heures supplémentaires:
   titre.en: overtime increase
   titre.fr: majoration heures supplémentaires
-contrat salarié . convention collective . HCR . montant forfaitaire d'un repas:
+salarié . convention collective . HCR . montant forfaitaire d'un repas:
   titre.en: fixed amount of a meal
   titre.fr: montant forfaitaire d'un repas
-contrat salarié . convention collective . HCR . prévoyance conventionnelle:
+salarié . convention collective . HCR . prévoyance conventionnelle:
   titre.en: '[automatic] conventional pension fund'
   titre.fr: prévoyance conventionnelle
-contrat salarié . convention collective . SVP:
+salarié . convention collective . SVP:
   description.en: >
     The company depends on the national collective agreement of performing arts
     private companies
@@ -2140,7 +2140,7 @@ contrat salarié . convention collective . SVP:
     privée du spectacle
   titre.en: '[automatic] Private live show'
   titre.fr: Spectacle vivant privé
-contrat salarié . convention collective . SVP . FCAP:
+salarié . convention collective . SVP . FCAP:
   description.en: >
     The "Fonds Commun d'Aide au Paritarisme du Spectacle Vivant Privé
     (FCAP-SVP)"  purposes are:
@@ -2169,10 +2169,10 @@ contrat salarié . convention collective . SVP . FCAP:
   note.fr: les minimum et maximum sont fixé par entreprise, et non par salarié
   titre.en: Common fund for gender mainspreading
   titre.fr: Fond commun d'aide au paritarisme
-contrat salarié . convention collective . SVP . cotisations patronales:
+salarié . convention collective . SVP . cotisations patronales:
   titre.en: contributions "conventionnelles"
   titre.fr: cotisations conventionnelles
-contrat salarié . convention collective . SVP . prévoyance:
+salarié . convention collective . SVP . prévoyance:
   note.en: '[automatic] In the case of the framework statute, the compulsory
     pension provision is more advantageous, so it is the latter that is taken
     into account.'
@@ -2180,7 +2180,7 @@ contrat salarié . convention collective . SVP . prévoyance:
     avantageuse, c'est donc cette dernière qui est prise en compte
   titre.en: insurance
   titre.fr: prévoyance
-contrat salarié . convention collective . compta:
+salarié . convention collective . compta:
   description.en: '[automatic] This collective agreement concerns chartered
     accountants registered with the Order, statutory auditors registered with
     the company, as well as approved management centres and approved
@@ -2190,10 +2190,10 @@ contrat salarié . convention collective . compta:
     ainsi que les centres de gestion agréés et les associations agréées (AGC).
   titre.en: '[automatic] Chartered Accountants and Statutory Auditors'
   titre.fr: Experts-comptables et commissaires aux comptes
-contrat salarié . convention collective . compta . majoration heures supplémentaires:
+salarié . convention collective . compta . majoration heures supplémentaires:
   titre.en: '[automatic] overtime increase'
   titre.fr: majoration heures supplémentaires
-contrat salarié . convention collective . contrôle décharge:
+salarié . convention collective . contrôle décharge:
   description.en: '[automatic] Caution: the implementation of the collective
     agreements is still partial and unverified. Nevertheless, this allows a
     first estimation, more precise than the general regime.'
@@ -2202,13 +2202,13 @@ contrat salarié . convention collective . contrôle décharge:
     première estimation, plus précise que le régime général."
   titre.en: '[automatic] discharge control'
   titre.fr: contrôle décharge
-contrat salarié . convention collective . droit commun:
+salarié . convention collective . droit commun:
   titre.en: common law
   titre.fr: droit commun
-contrat salarié . convention collective . optique:
+salarié . convention collective . optique:
   titre.en: '[automatic] Optics'
   titre.fr: Optique
-contrat salarié . convention collective . optique . coefficient:
+salarié . convention collective . optique . coefficient:
   description.en: "[automatic] Refer to the [grid provided by the collective
     agreement](http://opticiensreunis.org/storage/pdf/D4AciCiqHMr9mgqlTgjW0hvfP\
     yE4w6ZxGTCihzYy.pdf#page=27)."
@@ -2219,22 +2219,22 @@ contrat salarié . convention collective . optique . coefficient:
   question.fr: Quel est le coefficient correspondant au poste du salarié ?
   titre.en: '[automatic] coefficient'
   titre.fr: coefficient
-contrat salarié . convention collective . optique . prime d'ancienneté:
+salarié . convention collective . optique . prime d'ancienneté:
   titre.en: '[automatic] seniority bonus'
   titre.fr: prime d'ancienneté
-contrat salarié . convention collective . optique . prévoyance:
+salarié . convention collective . optique . prévoyance:
   titre.en: '[automatic] foresight'
   titre.fr: prévoyance
-contrat salarié . convention collective . optique . prévoyance . employeur:
+salarié . convention collective . optique . prévoyance . employeur:
   titre.en: '[automatic] employer'
   titre.fr: employeur
-contrat salarié . convention collective . optique . prévoyance . salarié:
+salarié . convention collective . optique . prévoyance . salarié:
   titre.en: '[automatic] employee'
   titre.fr: salarié
-contrat salarié . convention collective . optique . salaire minimum conventionnel:
+salarié . convention collective . optique . salaire minimum conventionnel:
   titre.en: '[automatic] standard minimum wage'
   titre.fr: salaire minimum conventionnel
-contrat salarié . convention collective . sport:
+salarié . convention collective . sport:
   description.en: >
     The company is subject to the National Collective Agreement for Athletes
     (CCNS)
@@ -2247,142 +2247,142 @@ contrat salarié . convention collective . sport:
     Les disciplines concernées sont tous les sports pour lesquels il existe une fédération française agréée par le ministère de la Jeunesse et des Sports.
   titre.en: '[automatic] Sport'
   titre.fr: Sport
-contrat salarié . convention collective . sport . cotisations:
+salarié . convention collective . sport . cotisations:
   titre.en: contributions
   titre.fr: cotisations
-contrat salarié . convention collective . sport . cotisations . assiette forfaitaire:
+salarié . convention collective . sport . cotisations . assiette forfaitaire:
   titre.en: flat-rate contribution base
   titre.fr: assiette forfaitaire
-contrat salarié . convention collective . sport . cotisations . assiette franchisée:
+salarié . convention collective . sport . cotisations . assiette franchisée:
   titre.en: franchised contribution base
   titre.fr: assiette franchisée
-contrat salarié . convention collective . sport . cotisations . financement du paritarisme:
+salarié . convention collective . sport . cotisations . financement du paritarisme:
   note.en: '[automatic] is calculated on the payroll'
   note.fr: se calcule sur la masse salariale
   titre.en: financing of gender mainstreaming
   titre.fr: financement du paritarisme
-contrat salarié . convention collective . sport . cotisations . formation professionnelle:
+salarié . convention collective . sport . cotisations . formation professionnelle:
   titre.en: professional training
   titre.fr: formation professionnelle
-contrat salarié . convention collective . sport . cotisations . formation professionnelle . CIF CDD:
+salarié . convention collective . sport . cotisations . formation professionnelle . CIF CDD:
   titre.en: CIF CDD
   titre.fr: CIF CDD
-contrat salarié . convention collective . sport . cotisations . formation professionnelle . CIF CDI:
+salarié . convention collective . sport . cotisations . formation professionnelle . CIF CDI:
   titre.en: CIF CDI
   titre.fr: CIF CDI
-contrat salarié . convention collective . sport . cotisations . formation professionnelle . plan de formation:
+salarié . convention collective . sport . cotisations . formation professionnelle . plan de formation:
   titre.en: professional training plan
   titre.fr: plan de formation
-contrat salarié . convention collective . sport . cotisations . formation professionnelle . plan de formation . versement minimum:
+salarié . convention collective . sport . cotisations . formation professionnelle . plan de formation . versement minimum:
   titre.en: minimum contribution
   titre.fr: versement minimum
-contrat salarié . convention collective . sport . cotisations . formation professionnelle . professionnalisation:
+salarié . convention collective . sport . cotisations . formation professionnelle . professionnalisation:
   titre.en: professionalization
   titre.fr: professionnalisation
-contrat salarié . convention collective . sport . cotisations . formation professionnelle . professionnalisation . versement minimum:
+salarié . convention collective . sport . cotisations . formation professionnelle . professionnalisation . versement minimum:
   titre.en: minimum contribution
   titre.fr: versement minimum
-contrat salarié . convention collective . sport . cotisations . franchise:
+salarié . convention collective . sport . cotisations . franchise:
   titre.en: exemption
   titre.fr: franchise
-contrat salarié . convention collective . sport . cotisations . patronales:
+salarié . convention collective . sport . cotisations . employeur:
   titre.en: Contributions "conventionnelles"
   titre.fr: cotisations conventionnelles
-contrat salarié . convention collective . sport . cotisations . prévoyance:
+salarié . convention collective . sport . cotisations . prévoyance:
   titre.en: insurance
   titre.fr: prévoyance
-contrat salarié . convention collective . sport . cotisations . régime frais de santé:
+salarié . convention collective . sport . cotisations . régime frais de santé:
   titre.en: health care plan
   titre.fr: régime frais de santé
-contrat salarié . convention collective . sport . cotisations . régime frais de santé . option:
+salarié . convention collective . sport . cotisations . régime frais de santé . option:
   question.en: What option was chosen for the health care plan?
   question.fr: Quel option a été choisi pour le régime des frais de santé ?
   titre.en: option
   titre.fr: option
-contrat salarié . convention collective . sport . cotisations . régime frais de santé . option . R1:
+salarié . convention collective . sport . cotisations . régime frais de santé . option . R1:
   titre.en: R1
   titre.fr: R1
-contrat salarié . convention collective . sport . cotisations . régime frais de santé . option . R2:
+salarié . convention collective . sport . cotisations . régime frais de santé . option . R2:
   titre.en: R2
   titre.fr: R2
-contrat salarié . convention collective . sport . cotisations . régime frais de santé . option . R3:
+salarié . convention collective . sport . cotisations . régime frais de santé . option . R3:
   titre.en: R3
   titre.fr: R3
-contrat salarié . convention collective . sport . cotisations . régime frais de santé . taux:
+salarié . convention collective . sport . cotisations . régime frais de santé . taux:
   titre.en: rate
   titre.fr: taux
-contrat salarié . convention collective . sport . exonération cotisation AT:
+salarié . convention collective . sport . exonération cotisation AT:
   titre.en: exemption from AT contribution
   titre.fr: exonération cotisation AT
-contrat salarié . convention collective . sport . exonération cotisation AT . refus:
+salarié . convention collective . sport . exonération cotisation AT . refus:
   question.en: Has the employer refused to be exempt from AT contributions?
   question.fr: L'employeur a-t'il refusé d'être exonéré de cotisations AT ?
   titre.en: refusal of AT exemption
   titre.fr: refus exonération AT
-contrat salarié . convention collective . sport . joueur entraineur:
+salarié . convention collective . sport . joueur entraineur:
   question.en: Is the player also a coach?
   question.fr: Le joueur est-il aussi entraineur ?
   titre.en: coach
   titre.fr: joueur entraineur
-contrat salarié . convention collective . sport . primes:
+salarié . convention collective . sport . primes:
   titre.en: event bonuses
   titre.fr: primes de manifestation
-contrat salarié . convention collective . sport . primes . autres manifestations:
+salarié . convention collective . sport . primes . autres manifestations:
   question.en: What is the bonus for the other events
   question.fr: Quelles primes pour les autres manifestations ?
   titre.en: other events
   titre.fr: autres manifestations
-contrat salarié . convention collective . sport . primes . manifestation 1:
+salarié . convention collective . sport . primes . manifestation 1:
   question.en: What is the bonus for the first event?
   question.fr: Quelle prime pour la première manifestation ?
   titre.en: event 1
   titre.fr: manifestation 1
-contrat salarié . convention collective . sport . primes . manifestation 1 . franchise:
+salarié . convention collective . sport . primes . manifestation 1 . franchise:
   titre.en: exemption event 1
   titre.fr: franchise manifestation 1
-contrat salarié . convention collective . sport . primes . manifestation 2:
+salarié . convention collective . sport . primes . manifestation 2:
   question.en: What is the bonus for the second event ?
   question.fr: Quelle prime pour la deuxième manifestation ?
   titre.en: event 2
   titre.fr: manifestation 2
-contrat salarié . convention collective . sport . primes . manifestation 2 . franchise:
+salarié . convention collective . sport . primes . manifestation 2 . franchise:
   titre.en: exemption event 2
   titre.fr: franchise manifestation 2
-contrat salarié . convention collective . sport . primes . manifestation 3:
+salarié . convention collective . sport . primes . manifestation 3:
   question.en: What is the bonus for the third event ?
   question.fr: Quelle prime pour la troisième manifestation ?
   titre.en: event 3
   titre.fr: manifestation 3
-contrat salarié . convention collective . sport . primes . manifestation 3 . franchise:
+salarié . convention collective . sport . primes . manifestation 3 . franchise:
   titre.en: exemption event 3
   titre.fr: franchise manifestation 3
-contrat salarié . convention collective . sport . primes . manifestation 4:
+salarié . convention collective . sport . primes . manifestation 4:
   question.en: What is the bonus for the fourth event ?
   question.fr: Quelle prime pour la quatrième manifestation ?
   titre.en: event 4
   titre.fr: manifestation 4
-contrat salarié . convention collective . sport . primes . manifestation 4 . franchise:
+salarié . convention collective . sport . primes . manifestation 4 . franchise:
   titre.en: exemption event 4
   titre.fr: franchise manifestation 4
-contrat salarié . convention collective . sport . primes . manifestation 5:
+salarié . convention collective . sport . primes . manifestation 5:
   question.en: What is the bonus for the fifth event ?
   question.fr: Quelle prime pour la cinquième manifestation ?
   titre.en: event 5
   titre.fr: manifestation 5
-contrat salarié . convention collective . sport . primes . manifestation 5 . franchise:
+salarié . convention collective . sport . primes . manifestation 5 . franchise:
   titre.en: exemption event 5
   titre.fr: franchise manifestation 5
-contrat salarié . convention collective . sport . primes . nombre de manifestations:
+salarié . convention collective . sport . primes . nombre de manifestations:
   question.en: How many paid sportive events did the player perform this month?
   question.fr: Combien de manifestations rémunérées le joueur a-t'il effectué ?
   titre.en: number of events
   titre.fr: nombre de manifestations
-contrat salarié . cotisations:
+salarié . cotisations:
   description.en: Total employer and employee contributions
   description.fr: Total des cotisations patronales et salariales
   titre.en: social contributions
   titre.fr: cotisations
-contrat salarié . cotisations . assiette:
+salarié . cotisations . assiette:
   description.en:
     This is the basis for computing a large number of contributions
     on salaries. It includes cash compensation (base salary, compensations,
@@ -2394,7 +2394,7 @@ contrat salarié . cotisations . assiette:
     avantages en nature (logement, véhicule...).
   titre.en: base for the social contributions
   titre.fr: Assiette des cotisations sociales
-contrat salarié . cotisations . assiette . salariale:
+salarié . cotisations . assiette . salariale:
   description.en: >
     Apprentices are exempt from social security contributions up to 79% of the
     minimum wage (SMIC).
@@ -2403,10 +2403,10 @@ contrat salarié . cotisations . assiette . salariale:
     79% du SMIC.
   titre.en: base for the social contributions
   titre.fr: Assiette des cotisations sociales
-contrat salarié . cotisations . assiette forfaitaire:
+salarié . cotisations . assiette forfaitaire:
   titre.en: flat-rate base
   titre.fr: assiette forfaitaire
-contrat salarié . cotisations . assiette forfaitaire . minimum:
+salarié . cotisations . assiette forfaitaire . minimum:
   description.en: >
     Lorsque la rémunération est supérieure ou égale à
       1,5 fois le plafond de la sécurité sociale, l'assiette forfaitaire retenue ne peut être inférieure à 70% de la rémunération
@@ -2416,31 +2416,31 @@ contrat salarié . cotisations . assiette forfaitaire . minimum:
       1,5 fois le plafond de la sécurité sociale, l'assiette forfaitaire retenue ne peut être inférieure à 70% de la rémunération
   titre.en: minimum
   titre.fr: minimum
-contrat salarié . cotisations . assiette forfaitaire . montant:
+salarié . cotisations . assiette forfaitaire . montant:
   titre.en: flat-rate contribution base
   titre.fr: assiette forfaitaire de cotisations
-contrat salarié . cotisations . assiette forfaitaire . rémunération réelle:
+salarié . cotisations . assiette forfaitaire . rémunération réelle:
   question.en: de la base forfaitaire) ?
   question.fr:
     Voulez-vous calculer les cotisations sur la rémunération réelle (au
     lieu de la base forfaitaire) ?
   titre.en: real remuneration
   titre.fr: rémunération réelle
-contrat salarié . cotisations . assiette minimale:
+salarié . cotisations . assiette minimale:
   titre.en: '[automatic] minimum base'
   titre.fr: assiette minimale
-contrat salarié . cotisations . maladie sur les revenus de remplacement:
+salarié . cotisations . maladie sur les revenus de remplacement:
   titre.en: '[automatic] sickness on replacement income'
   titre.fr: maladie sur les revenus de remplacement
-contrat salarié . cotisations . patronales:
+salarié . cotisations . employeur:
   titre.en: employer contributions
   titre.fr: cotisations patronales
-contrat salarié . cotisations . patronales . conventionnelles:
+salarié . cotisations . employeur . conventionnelles:
   description.en: Collective agreement specific contributions
   description.fr: Cotisations spécifiques à la convention collective
   titre.en: employer contribution specific to the "convention collective"
   titre.fr: cotisations patronales conventionnelles
-contrat salarié . cotisations . patronales . réductions de cotisations:
+salarié . cotisations . employeur . réductions de cotisations:
   description.en: >-
     [automatic] With the exception of the overtime deduction, the employer
     contribution reduction schemes are mutually exclusive.
@@ -2453,35 +2453,35 @@ contrat salarié . cotisations . patronales . réductions de cotisations:
     Le formule ci dessous selectionne donc automatiquement le plus avantageux pour l'employeur.
   titre.en: "[automatic] employer's reductions"
   titre.fr: réductions patronales
-contrat salarié . cotisations . patronales . réductions de cotisations . déduction heures supplémentaires:
+salarié . cotisations . employeur . réductions de cotisations . déduction heures supplémentaires:
   note.en: '[automatic] Deduction does not apply to overtime work.'
   note.fr: La déduction ne s’applique pas aux heures complémentaires
   titre.en: flat-rate deduction for overtime
   titre.fr: déduction forfaitaire pour heures supplémentaires
-contrat salarié . cotisations . réductions de cotisations:
+salarié . cotisations . exonérations de cotisations:
   titre.en: '[automatic] Contribution Reductions'
   titre.fr: Réductions de cotisations
-contrat salarié . cotisations . salariales:
+salarié . cotisations . salarié:
   titre.en: Employee contributions
   titre.fr: cotisations salariales
-contrat salarié . cotisations . salariales . conventionnelles:
+salarié . cotisations . salarié . conventionnelles:
   description.en: Collective agreement specific contributions
   description.fr: Cotisations spécifiques à la convention collective
   titre.en: employee contribution specific to the "convention collective"
   titre.fr: cotisations salariales conventionnelles
-contrat salarié . cotisations . salariales . réduction heures supplémentaires:
+salarié . cotisations . salarié . réduction heures supplémentaires:
   titre.en: reduction for overtime hours
   titre.fr: réduction heures supplémentaires
-contrat salarié . cotisations . salariales . réduction heures supplémentaires . taux des cotisations réduites:
+salarié . cotisations . salarié . réduction heures supplémentaires . taux des cotisations réduites:
   description.en: the effective rate of the employee's pension contributions
   description.fr: le taux effectif des cotisations d'assurance vieillesse à la
     charge du salarié
   titre.en: reduced contribution rates
   titre.fr: taux des cotisations réduites
-contrat salarié . cotisations . salariales . réductions de cotisations:
+salarié . cotisations . salarié . réductions de cotisations:
   titre.en: '[automatic] pay cuts'
   titre.fr: réductions salariales
-contrat salarié . déduction forfaitaire spécifique:
+salarié . déduction forfaitaire spécifique:
   description.en: >-
     [automatic] For a specific list of professions, the employer can apply a
     specific fixed deduction (DFS) for professional expenses on the basis of
@@ -2501,7 +2501,7 @@ contrat salarié . déduction forfaitaire spécifique:
   question.fr: Le salarié bénéficie-t-il d'une déduction forfaitaire spécifique ?
   titre.en: '[automatic] plate with DFS'
   titre.fr: assiette avec DFS
-contrat salarié . déduction forfaitaire spécifique . profession:
+salarié . déduction forfaitaire spécifique . profession:
   question.en:
     "[automatic] What is the employee's occupation for the application
     of the specific flat-rate deduction?"
@@ -2509,14 +2509,14 @@ contrat salarié . déduction forfaitaire spécifique . profession:
     déduction forfaitaire spécifique ?
   titre.en: '[automatic] profession'
   titre.fr: profession
-contrat salarié . déduction forfaitaire spécifique . profession . artiste musicien:
+salarié . déduction forfaitaire spécifique . profession . artiste musicien:
   description.en: '[automatic] Concerns musicians, chorus members, conductors,
     theatre managers'
   description.fr: Concerne les artistes musiciens, choristes, chefs d’orchestre,
     régisseurs de théâtre
   titre.en: '[automatic] musical artist'
   titre.fr: artiste musicien
-contrat salarié . déduction forfaitaire spécifique . profession . journaliste:
+salarié . déduction forfaitaire spécifique . profession . journaliste:
   description.en: '[automatic] Concerns journalists, editors, photographers,
     newspaper editors Drama and music critics.'
   description.fr:
@@ -2524,13 +2524,13 @@ contrat salarié . déduction forfaitaire spécifique . profession . journaliste
     de journaux Critiques dramatiques et musicaux.
   titre.en: '[automatic] journalist'
   titre.fr: journaliste
-contrat salarié . déduction forfaitaire spécifique . profession . journaliste . abattement fiscal:
+salarié . déduction forfaitaire spécifique . profession . journaliste . abattement fiscal:
   titre.en: '[automatic] net taxable journalist'
   titre.fr: net imposable journaliste
-contrat salarié . déduction forfaitaire spécifique . profession . journaliste . réduction de taux:
+salarié . déduction forfaitaire spécifique . profession . journaliste . réduction de taux:
   titre.en: '[automatic] rate reduction'
   titre.fr: réduction de taux
-contrat salarié . déduction forfaitaire spécifique . profession . ouvrier du bâtiment:
+salarié . déduction forfaitaire spécifique . profession . ouvrier du bâtiment:
   description.en: '[automatic] Concerns construction workers referred to in
     paragraphs 1 and 2 of Article 1 of the Decree of 17 November 1936, excluding
     those working in factories or workshops.'
@@ -2540,7 +2540,7 @@ contrat salarié . déduction forfaitaire spécifique . profession . ouvrier du 
     travaillent en usine ou en atelier.
   titre.en: '[automatic] construction worker'
   titre.fr: ouvrier du bâtiment
-contrat salarié . déduction forfaitaire spécifique . profession . pilote de ligne ou personnel navigant:
+salarié . déduction forfaitaire spécifique . profession . pilote de ligne ou personnel navigant:
   description.en: '[automatic] Concerns pilots, radios, flight engineers of air
     transport companies; pilots and mechanics employed by aircraft and engine
     manufacturing companies for the testing of prototypes; pilot instructors of
@@ -2551,10 +2551,10 @@ contrat salarié . déduction forfaitaire spécifique . profession . pilote de l
     pilotes moniteurs d’aéro-clubs et des écoles d’aviation civile
   titre.en: '[automatic] airline pilot or flight attendant'
   titre.fr: pilote de ligne ou personnel navigant
-contrat salarié . déduction forfaitaire spécifique . taux:
+salarié . déduction forfaitaire spécifique . taux:
   titre.en: '[automatic] rates'
   titre.fr: taux
-contrat salarié . exonération d'impôt des stagiaires et apprentis:
+salarié . exonération d'impôt des stagiaires et apprentis:
   description.en: >
     Wages paid to apprentices and internship bonuses are exempt from income tax
     up to an annual minimum wage.
@@ -2563,7 +2563,7 @@ contrat salarié . exonération d'impôt des stagiaires et apprentis:
     sont exonérés d'impôt sur le revenu dans la limite d'un SMIC annuel.
   titre.en: tax exemption for interns and apprentices
   titre.fr: exonération d'impôt des stagiaires et apprentis
-contrat salarié . forfait social:
+salarié . forfait social:
   description.en:
     The _forfait social_ is a contribution paid by the employer. It
     is deducted from earnings or earnings not subject to contributions and
@@ -2574,7 +2574,7 @@ contrat salarié . forfait social:
     contributions sociales, mais assujettis à la CSG.
   titre.en: Forfait social
   titre.fr: Forfait social
-contrat salarié . formation professionnelle:
+salarié . formation professionnelle:
   description.en:
     This mandatory contribution is to be paid to the OPCA designated
     by the conventional branch of the company, or failing that to an OPCA
@@ -2620,7 +2620,7 @@ contrat salarié . formation professionnelle:
     - taux de **1 %** pour le franchissement en année **N+5** (1,3 % pour les entreprises de travail temporaire)
   titre.en: professional training
   titre.fr: formation professionnelle
-contrat salarié . frais professionnels:
+salarié . rémunération . frais professionnels:
   description.en: >-
     [automatic] Business expenses correspond to expenses incurred by the
     employee for the needs of his professional activity. These expenses are then
@@ -2655,10 +2655,10 @@ contrat salarié . frais professionnels:
     Les frais professionnels sont généralement exclus de la base de calcul des cotisations de sécurité sociale et de la CSG-CRDS, sauf en cas de dépassement de plafond pour les remboursements forfaitaires ( frais de panier, titres-restaurant, forfait mobilités durables...).
   titre.en: '[automatic] reimbursement of expenses'
   titre.fr: remboursement de frais
-contrat salarié . frais professionnels . abonnement transports publics:
+salarié . rémunération . frais professionnels . abonnement transports publics:
   titre.en: '[automatic] public transport pass'
   titre.fr: abonnement transports publics
-contrat salarié . frais professionnels . abonnement transports publics . montant:
+salarié . rémunération . frais professionnels . abonnement transports publics . montant:
   description.en: >
     [automatic] The employer must pay 50% of the amount spent by the employee on
     public transport to work.
@@ -2695,24 +2695,24 @@ contrat salarié . frais professionnels . abonnement transports publics . montan
   suggestions.Técély.fr: Técély
   titre.en: '[automatic] Public transport season ticket'
   titre.fr: Abonnement aux transports publics
-contrat salarié . frais professionnels . abonnement transports publics . prise en charge:
+salarié . rémunération . frais professionnels . abonnement transports publics . prise en charge:
   titre.en: "[automatic] Public transport season ticket, employer's share (deductible)"
   titre.fr: Abonnement transports publics, part prise en charge par l'employeur
     (déductible)
-contrat salarié . frais professionnels . abonnement transports publics . taux de participation employeur:
+salarié . rémunération . frais professionnels . abonnement transports publics . taux de participation employeur:
   titre.en: '[automatic] employer participation rate'
   titre.fr: taux de participation employeur
-contrat salarié . frais professionnels . abonnement transports publics . taux de prise en charge:
+salarié . rémunération . frais professionnels . abonnement transports publics . taux de prise en charge:
   titre.en: Employer's share
   titre.fr: Taux de prise en charge
-contrat salarié . frais professionnels . part déductible:
+salarié . rémunération . frais professionnels . part déductible:
   description.en: '[automatic] Share of expenses deducted from the social
     contribution base and for income tax calculation.'
   description.fr: Part des frais déduite de l'assiette de cotisation sociale et
     pour le calcul de l'impôt sur le revenu.
   titre.en: '[automatic] Deductible business expenses'
   titre.fr: Frais professionnels déductibles
-contrat salarié . frais professionnels . titres-restaurant:
+salarié . rémunération . frais professionnels . titres-restaurant:
   description.en: >-
     [automatic] The meal voucher is a special "meal" payment voucher given by
     the employer to the employee.
@@ -2745,22 +2745,22 @@ contrat salarié . frais professionnels . titres-restaurant:
   question.fr: Le salarié reçoit-il des titres-restaurant ?
   titre.en: '[automatic] restaurant vouchers'
   titre.fr: titres-restaurant
-contrat salarié . frais professionnels . titres-restaurant . contrôle taux employeur max:
+salarié . rémunération . frais professionnels . titres-restaurant . contrôle taux employeur max:
   description.en:
     "[automatic] The employer's share of the meal voucher must be a
     maximum of 60%."
   description.fr: La part employeur du titre-restaurant doit être de 60% au maximum
   titre.en: '[automatic] control max. employer rate'
   titre.fr: contrôle taux employeur max
-contrat salarié . frais professionnels . titres-restaurant . contrôle taux employeur min:
+salarié . rémunération . frais professionnels . titres-restaurant . contrôle taux employeur min:
   description.en: "[automatic] The employer's share of the meal voucher must be at least 50%."
   description.fr: La part employeur du titre-restaurant doit être de 50% au minimum
   titre.en: '[automatic] control minimum employer rate'
   titre.fr: contrôle taux employeur min
-contrat salarié . frais professionnels . titres-restaurant . montant:
+salarié . rémunération . frais professionnels . titres-restaurant . montant:
   titre.en: '[automatic] amount'
   titre.fr: montant
-contrat salarié . frais professionnels . titres-restaurant . montant unitaire:
+salarié . rémunération . frais professionnels . titres-restaurant . montant unitaire:
   description.en: '[automatic] There is no maximum or minimum value for meal
     vouchers. However, in order to benefit from the contribution exemption, the
     value of the voucher must not exceed €11.38 in 2021.'
@@ -2777,7 +2777,7 @@ contrat salarié . frais professionnels . titres-restaurant . montant unitaire:
   suggestions.moyenne.fr: moyenne
   titre.en: '[automatic] unitary amount'
   titre.fr: montant unitaire
-contrat salarié . frais professionnels . titres-restaurant . nombre:
+salarié . rémunération . frais professionnels . titres-restaurant . nombre:
   question.en: '[automatic] How many meal vouchers are distributed to the employee?'
   question.fr: Combien de titres-restaurant sont distribués au salarié ?
   suggestions.3 repas/semaine.en: '[automatic] 3 meals/week'
@@ -2786,10 +2786,10 @@ contrat salarié . frais professionnels . titres-restaurant . nombre:
   suggestions.5 repas/semaines.fr: 5 repas/semaines
   titre.en: '[automatic] number'
   titre.fr: nombre
-contrat salarié . frais professionnels . titres-restaurant . part déductible:
+salarié . rémunération . frais professionnels . titres-restaurant . part déductible:
   titre.en: '[automatic] Restaurant vouchers (deductible)'
   titre.fr: Titres-restaurant (déductible)
-contrat salarié . frais professionnels . titres-restaurant . taux participation employeur:
+salarié . rémunération . frais professionnels . titres-restaurant . taux participation employeur:
   description.en:
     '[automatic] Employer-paid portion of the meal voucher. Must be
     a minimum of 50% and a maximum of 60%.'
@@ -2804,7 +2804,7 @@ contrat salarié . frais professionnels . titres-restaurant . taux participation
   suggestions.60%.fr: 60%
   titre.en: '[automatic] employer contribution rate'
   titre.fr: taux participation employeur
-contrat salarié . frais professionnels . titres-restaurant applicable:
+salarié . rémunération . frais professionnels . titres-restaurant applicable:
   description.en: >-
     [automatic] The meal voucher is a special payment voucher for "meals" given
     by the employer to the employee.
@@ -2835,13 +2835,13 @@ contrat salarié . frais professionnels . titres-restaurant applicable:
     Ce titre peut être émis sur support papier ou sous forme dématérialisée.
   titre.en: '[automatic] applicable meal vouchers'
   titre.fr: titres-restaurant applicable
-contrat salarié . frais professionnels . transports personnels:
+salarié . rémunération . frais professionnels . transports personnels:
   titre.en: '[automatic] personal transports'
   titre.fr: transports personnels
-contrat salarié . frais professionnels . transports personnels . carburant faible émission:
+salarié . rémunération . frais professionnels . transports personnels . carburant faible émission:
   titre.en: '[automatic] low emission fuel'
   titre.fr: carburant faible émission
-contrat salarié . frais professionnels . transports personnels . carburant faible émission . montant:
+salarié . rémunération . frais professionnels . transports personnels . carburant faible émission . montant:
   description.en: >
     [automatic] The employer may cover all or part of the fuel costs incurred by
     the employee for his electric, plug-in hybrid or hydrogen vehicle, upon
@@ -2881,15 +2881,15 @@ contrat salarié . frais professionnels . transports personnels . carburant faib
   titre.en: '[automatic] Fuel support for electric, plug-in hybrid or hydrogen vehicles'
   titre.fr: Prise en charge du carburant pour véhicule électrique, hybride
     rechargeable ou hydrogène
-contrat salarié . frais professionnels . transports personnels . carburant faible émission . part déductible:
+salarié . rémunération . frais professionnels . transports personnels . carburant faible émission . part déductible:
   titre.en: '[automatic] Fuel support for electric vehicles, plug-in hybrids or
     hydrogen (deductible part)'
   titre.fr: Prise en charge du carburant pour véhicule électrique, hybride
     rechargeable ou hydrogène (part déductible)
-contrat salarié . frais professionnels . transports personnels . forfait mobilités durables:
+salarié . rémunération . frais professionnels . transports personnels . forfait mobilités durables:
   titre.en: '[automatic] sustainable mobility package'
   titre.fr: forfait mobilités durables
-contrat salarié . frais professionnels . transports personnels . forfait mobilités durables . montant:
+salarié . rémunération . frais professionnels . transports personnels . forfait mobilités durables . montant:
   description.en: >
     [automatic] The employer may cover all or part of the travel expenses
     related to the use of vehicles included in the sustainable mobility package.
@@ -2951,23 +2951,23 @@ contrat salarié . frais professionnels . transports personnels . forfait mobili
     forfait mobilités durables ?
   titre.en: '[automatic] Coverage of transport costs for sustainable mobility packages'
   titre.fr: Prise en charge des frais de transports forfait mobilités durables
-contrat salarié . frais professionnels . transports personnels . forfait mobilités durables . part déductible:
+salarié . rémunération . frais professionnels . transports personnels . forfait mobilités durables . part déductible:
   titre.en: '[automatic] Coverage of fixed-price transport costs for sustainable
     mobility (deductible part)'
   titre.fr: Prise en charge des frais de transports forfait mobilités durables
     (part déductible)
-contrat salarié . frais professionnels . transports personnels . part déductible:
+salarié . rémunération . frais professionnels . transports personnels . part déductible:
   titre.en: '[automatic] deductible portion'
   titre.fr: part déductible
-contrat salarié . frais professionnels . transports personnels . proportion déduction:
+salarié . rémunération . frais professionnels . transports personnels . proportion déduction:
   titre.en: '[automatic] Deductibility Proportion Factor'
   titre.fr: Facteur de proportion de la déductibilité
-contrat salarié . intermittents du spectacle:
+salarié . intermittents du spectacle:
   question.en: To which "intermittent" status is the employee attached?
   question.fr: A quel statut d'intermittent est rattaché l'employé ?
   titre.en: intermittents du spectacle
   titre.fr: intermittents du spectacle
-contrat salarié . intermittents du spectacle . artiste:
+salarié . intermittents du spectacle . artiste:
   description.en: >
     The following are considered as performing artists:
 
@@ -3026,19 +3026,19 @@ contrat salarié . intermittents du spectacle . artiste:
     - Les personnes dont l'activité est reconnue comme un métier d'artiste-interprète par les conventions collectives du spectacle vivant étendues.
   titre.en: artist
   titre.fr: artiste
-contrat salarié . intermittents du spectacle . artiste . acteur de complément:
+salarié . intermittents du spectacle . artiste . acteur de complément:
   question.en: production cinématographique ?
   question.fr: L'artiste est-il un acteur de complément engagé à la journée pour
     une production cinématographique ?
   titre.en: complementary actor
   titre.fr: acteur de complément
-contrat salarié . intermittents du spectacle . artiste . acteur de complément . assiette forfaitaire:
+salarié . intermittents du spectacle . artiste . acteur de complément . assiette forfaitaire:
   titre.en: flat-rate base
   titre.fr: assiette forfaitaire
-contrat salarié . intermittents du spectacle . artiste . acteur de complément . nombre jours travaillés:
+salarié . intermittents du spectacle . artiste . acteur de complément . nombre jours travaillés:
   titre.en: number of days worked
   titre.fr: nombre jours travaillés
-contrat salarié . intermittents du spectacle . artiste . activité accessoire:
+salarié . intermittents du spectacle . artiste . activité accessoire:
   question.en: >
     Is the artist remunerated for an ancillary activity (exemption from courses,
     internships, etc.)?
@@ -3047,39 +3047,39 @@ contrat salarié . intermittents du spectacle . artiste . activité accessoire:
     stages, etc) ?
   titre.en: incidental activity
   titre.fr: activité accessoire
-contrat salarié . intermittents du spectacle . artiste . nombre jours travaillés:
+salarié . intermittents du spectacle . artiste . nombre jours travaillés:
   question.en: For how many continuous days is the artist engaged?
   question.fr: Pour combien de jours continus l'artiste est-il engagé ?
   titre.en: number of days worked
   titre.fr: nombre jours travaillés
-contrat salarié . intermittents du spectacle . artiste . non cadre:
+salarié . intermittents du spectacle . artiste . non cadre:
   titre.en: not "cadre"
   titre.fr: non cadre
-contrat salarié . intermittents du spectacle . artiste . plafond proratisé:
+salarié . intermittents du spectacle . artiste . plafond proratisé:
   titre.en: proration ceiling
   titre.fr: plafond proratisé
-contrat salarié . intermittents du spectacle . artiste . réduction de taux:
+salarié . intermittents du spectacle . artiste . réduction de taux:
   titre.en: rate reduction
   titre.fr: réduction de taux
-contrat salarié . intermittents du spectacle . artiste . réduction de taux . ATMP:
+salarié . intermittents du spectacle . artiste . réduction de taux . ATMP:
   titre.en: ATMP
   titre.fr: ATMP
-contrat salarié . intermittents du spectacle . caisse des congés spectacle:
+salarié . intermittents du spectacle . caisse des congés spectacle:
   titre.en: '"spectacle" holiday fund'
   titre.fr: caisse des congés spectacle
-contrat salarié . intermittents du spectacle . formation professionnelle:
+salarié . intermittents du spectacle . formation professionnelle:
   titre.en: formation professionnelle
   titre.fr: formation professionnelle
-contrat salarié . intermittents du spectacle . retraite complémentaire techniciens et cadre:
+salarié . intermittents du spectacle . retraite complémentaire techniciens et cadre:
   titre.en: supplementary pension for technicians and "cadre"
   titre.fr: retraite complémentaire techniciens et cadre
-contrat salarié . intermittents du spectacle . technicien:
+salarié . intermittents du spectacle . technicien:
   titre.en: technician
   titre.fr: technicien
-contrat salarié . intermittents du spectacle . technicien . non cadre:
+salarié . intermittents du spectacle . technicien . non cadre:
   titre.en: not "cadre"
   titre.fr: non cadre
-contrat salarié . lodeom:
+salarié . cotisations . employeur . réductions:
   description.en: >
     A rather complex set of contribution reductions is available for overseas
     employees. Their operation is similar to that of the general reduction on
@@ -3094,18 +3094,18 @@ contrat salarié . lodeom:
     Pour un autre salaire plus élevé, 0% de réduction. Entre les deux, on trace une ligne droite.
   titre.en: lodeom
   titre.fr: lodeom
-contrat salarié . lodeom . borne inférieure:
+salarié . cotisations . employeur . réductions . borne inférieure:
   titre.en: lower boundary
   titre.fr: borne inférieure
-contrat salarié . lodeom . borne supérieure:
+salarié . cotisations . employeur . réductions . borne supérieure:
   titre.en: upper boundary
   titre.fr: borne supérieure
-contrat salarié . lodeom . multiplicateur:
+salarié . cotisations . employeur . réductions . multiplicateur:
   note.en: '[automatic] for scale 1 the denominator is 0.9'
   note.fr: pour le barème 1 le dénominateur vaut 0,9
   titre.en: multiplier
   titre.fr: multiplicateur
-contrat salarié . lodeom . paramètre T:
+salarié . cotisations . employeur . réductions . paramètre T:
   note.en:
     '[automatic] The value of the parameter `T` depends on the FNAL rate. A
     better implementation is to calculate this parameter as a sum of rates.'
@@ -3113,10 +3113,10 @@ contrat salarié . lodeom . paramètre T:
     implémentation consiste à calculer ce paramètre comme une somme de taux.
   titre.en: T parameter
   titre.fr: paramètre T
-contrat salarié . lodeom . plafond de l'assiette:
+salarié . cotisations . employeur . réductions . plafond de l'assiette:
   titre.en: base ceiling
   titre.fr: plafond de l'assiette
-contrat salarié . lodeom . réduction outre-mer:
+salarié . cotisations . employeur . réductions . réduction outre-mer:
   note.en:
     "[automatic] We use the official social security calculation method. It
     would be preferable here to reduce the contributions concerned directly,
@@ -3129,7 +3129,7 @@ contrat salarié . lodeom . réduction outre-mer:
     année (ils dépendent directement des cotisaitons réduites).
   titre.en: overseas reduction
   titre.fr: réduction outre-mer
-contrat salarié . lodeom . secteurs d'activité:
+salarié . cotisations . employeur . réductions . secteurs d'activité:
   description.en: >
     [automatic] To be eligible for the 1st scale of the LODEOM exemption, known
     as the competitiveness scale, your company must belong to one of the
@@ -3168,13 +3168,13 @@ contrat salarié . lodeom . secteurs d'activité:
   question.fr: Votre entreprise appartient-elle à l'un des secteurs éligible LODEOM ?
   titre.en: '[automatic] business areas'
   titre.fr: secteurs d'activité
-contrat salarié . lodeom . écart au plafond de l'assiette:
+salarié . cotisations . employeur . réductions . écart au plafond de l'assiette:
   titre.en: deviation from the base ceiling
   titre.fr: écart au plafond de l'assiette
-contrat salarié . lodeom . éligible barème compétitivité:
+salarié . cotisations . employeur . réductions . éligible barème compétitivité:
   titre.en: Eligibility for the competitiveness scale
   titre.fr: Eligibilité au barème de compétitivité
-contrat salarié . lodeom . éligible barème compétitivité renforcée:
+salarié . cotisations . employeur . réductions . éligible barème compétitivité renforcée:
   description.en: >
     - Turnover of less than 50 million euros 
 
@@ -3195,7 +3195,7 @@ contrat salarié . lodeom . éligible barème compétitivité renforcée:
   question.fr: Êtes-vous éligibles au barème compétitivité renforcée ?
   titre.en: eligible to enhanced competitiveness scale
   titre.fr: éligible barème compétitivité renforcée
-contrat salarié . lodeom . éligible barème innovation et croissance:
+salarié . cotisations . employeur . réductions . éligible barème innovation et croissance:
   description.en: >-
     - Employers with less than 250 employees and an annual turnover of less than
     €50 million are eligible for this scale as compensation for employees who
@@ -3231,30 +3231,30 @@ contrat salarié . lodeom . éligible barème innovation et croissance:
   question.fr: Êtes-vous éligibles au barème innovation et croissance ?
   titre.en: eligible to innovation and growth scale
   titre.fr: éligible barème innovation et croissance
-contrat salarié . maladie:
+salarié . maladie:
   description.en: Contributions to the national health insurance
   description.fr: Cotisations de la branche maladie
   titre.en: health insurance
   titre.fr: maladie
-contrat salarié . maladie . plafond de réduction employeur:
+salarié . maladie . plafond de réduction employeur:
   titre.en: employer reduction limit
   titre.fr: plafond de réduction employeur
-contrat salarié . maladie . taux domiciliation fiscale étranger:
+salarié . maladie . taux domiciliation fiscale étranger:
   titre.en: employee rate (tax domicile abroad)
   titre.fr: taux salarié (domiciliation fiscale à l'étranger)
-contrat salarié . maladie . taux employeur:
+salarié . maladie . taux employeur:
   titre.en: employer rate
   titre.fr: taux employeur
-contrat salarié . maladie . taux employeur . taux réduit:
+salarié . maladie . taux employeur . taux réduit:
   titre.en: reduced rate
   titre.fr: taux réduit
-contrat salarié . maladie . taux salarié:
+salarié . maladie . taux salarié:
   titre.en: employee rate
   titre.fr: taux salarié
-contrat salarié . maladie . taux solidarité autonomie:
+salarié . maladie . taux solidarité autonomie:
   titre.en: '[automatic] solidarity rate autonomy'
   titre.fr: taux solidarité autonomie
-contrat salarié . participation effort de construction:
+salarié . participation effort de construction:
   description.en: Employer participation in the home building effort
   description.fr: Participation des employeurs à l'effort de construction
   note.en: >
@@ -3268,10 +3268,10 @@ contrat salarié . participation effort de construction:
     accorder à eux et leur famille des prêts de construction à taux réduit.
   titre.en: Participation to home building
   titre.fr: Participation à l'effort de construction
-contrat salarié . plafond sécurité sociale:
+salarié . plafond sécurité sociale:
   titre.en: social security ceiling
   titre.fr: plafond sécurité sociale
-contrat salarié . plafond sécurité sociale . renonciation proratisation:
+salarié . plafond sécurité sociale . renonciation proratisation:
   description.en:
     '[automatic] By mutual agreement, the employer and the employee
     may waive the reduction of the social security ceiling (applicable for
@@ -3284,13 +3284,13 @@ contrat salarié . plafond sécurité sociale . renonciation proratisation:
     vieillesse.
   titre.en: '[automatic] proration waiver'
   titre.fr: renonciation proratisation
-contrat salarié . prime d'impatriation:
+salarié . prime d'impatriation:
   description.en: The impatriation bonus is a part of the remuneration exempt from income tax.
   description.fr: La prime d'impatriation est une partie de la rémunération
     exonérée d'impôt sur le revenu.
   titre.en: impatriation bonus
   titre.fr: prime d'impatriation
-contrat salarié . prix du travail:
+salarié . prix du travail:
   description.en: >
     [automatic] Total cost of hiring an employee including, in addition to the
     remuneration elements, the deferred aid
@@ -3313,7 +3313,7 @@ contrat salarié . prix du travail:
   résumé.fr: Dépensé par l'entreprise
   titre.en: labor cost
   titre.fr: Coût total
-contrat salarié . professionnalisation:
+salarié . contrat . professionnalisation:
   description.en: >
     [automatic] The professionalization contract is a work-study contract
 
@@ -3343,32 +3343,32 @@ contrat salarié . professionnalisation:
     prolongée jusqu'à 36 mois.
   titre.en: '[automatic] professionalization'
   titre.fr: professionnalisation
-contrat salarié . professionnalisation . jeune de moins de 30 ans:
+salarié . contrat . professionnalisation . jeune de moins de 30 ans:
   question.en: '[automatic] Is the employee hired under the age of 30?'
   question.fr: Le salarié embauché a-t'il moins de 30 ans ?
   titre.en: '[automatic] under 30 years old'
   titre.fr: jeune de moins de 30 ans
-contrat salarié . professionnalisation . salarié de 45 ans et plus:
+salarié . contrat . professionnalisation . salarié de 45 ans et plus:
   question.en: '[automatic] Is the employee hired 45 years of age or older?'
   question.fr: Le salarié embauché a-t'il 45 ans ou plus ?
   titre.en: '[automatic] employee aged 45 and over'
   titre.fr: salarié de 45 ans et plus
-contrat salarié . prévoyance:
+salarié . prévoyance:
   titre.en: '[automatic] foresight'
   titre.fr: prévoyance
-contrat salarié . prévoyance . exonération fiscale:
+salarié . prévoyance . exonération fiscale:
   titre.en: '[automatic] tax-exempt pension'
   titre.fr: prévoyance exonérée d'impôt
-contrat salarié . prévoyance . part déductible:
+salarié . prévoyance . part déductible:
   titre.en: '[automatic] deductible portion'
   titre.fr: part déductible
-contrat salarié . prévoyance . plafond exonération sociale employeur:
+salarié . prévoyance . plafond exonération sociale employeur:
   titre.en: "[automatic] ceiling employer's social security exemption"
   titre.fr: plafond exonération sociale employeur
-contrat salarié . prévoyance obligatoire cadre:
+salarié . prévoyance obligatoire cadre:
   titre.en: mandatory life insurance for "cadres"
   titre.fr: Prévoyance obligatoire pour les cadres
-contrat salarié . retraite complémentaire:
+salarié . retraite complémentaire:
   description.en: >
     Supplementary pension contribution. Replaces AGIRC and ARRCO which were
     separate before 2019.
@@ -3376,19 +3376,19 @@ contrat salarié . retraite complémentaire:
     Cotisations de retraite complémentaire.
   titre.en: supplementary pension
   titre.fr: retraite complémentaire
-contrat salarié . retraite supplémentaire:
+salarié . retraite supplémentaire:
   titre.en: '[automatic] additional pension'
   titre.fr: retraite supplémentaire
-contrat salarié . retraite supplémentaire . exonération fiscale:
+salarié . retraite supplémentaire . exonération fiscale:
   titre.en: '[automatic] tax-exempt supplementary pension'
   titre.fr: retraite supplémentaire exonérée d'impôt
-contrat salarié . retraite supplémentaire . part déductible:
+salarié . retraite supplémentaire . part déductible:
   titre.en: '[automatic] deductible portion'
   titre.fr: part déductible
-contrat salarié . retraite supplémentaire . plafond d'exonération sociale employeur:
+salarié . retraite supplémentaire . plafond d'exonération sociale employeur:
   titre.en: "[automatic] employer's social security ceiling"
   titre.fr: plafond d'exonération sociale employeur
-contrat salarié . réduction générale:
+salarié . cotisations . exonérations . réduction générale:
   description.en: >
     [automatic] Within the framework of the responsibility and solidarity pact,
     the Urssaf zero-contribution scheme allows the employer of an employee with
@@ -3403,25 +3403,25 @@ contrat salarié . réduction générale:
     particulière à effectuer.
   titre.en: general reduction
   titre.fr: réduction générale
-contrat salarié . réduction générale . T:
+salarié . cotisations . exonérations . réduction générale . T:
   titre.en: '[automatic] Coefficient T'
   titre.fr: Coefficient T
-contrat salarié . réduction générale . T sécurité sociale et chômage:
+salarié . cotisations . exonérations . réduction générale . T sécurité sociale et chômage:
   titre.en: '[automatic] T social security and unemployment'
   titre.fr: T sécurité sociale et chômage
-contrat salarié . réduction générale . coefficient:
+salarié . cotisations . exonérations . réduction générale . coefficient:
   titre.en: '[automatic] coefficient'
   titre.fr: coefficient
-contrat salarié . réduction générale . imputation retraite complémentaire:
+salarié . cotisations . exonérations . réduction générale . imputation retraite complémentaire:
   titre.en: '[automatic] supplementary pension allocation'
   titre.fr: imputation retraite complémentaire
-contrat salarié . réduction générale . imputation sécurité sociale:
+salarié . cotisations . exonérations . réduction générale . imputation sécurité sociale:
   titre.en: '[automatic] social security allocation'
   titre.fr: imputation sécurité sociale
-contrat salarié . réduction générale . plafond avec application de la DFS:
+salarié . cotisations . exonérations . réduction générale . plafond avec application de la DFS:
   titre.en: '[automatic] ceiling with DFS application'
   titre.fr: plafond avec application de la DFS
-contrat salarié . régime alsace moselle:
+salarié . régime alsace moselle:
   description.en: >
     [automatic] We consider that an employee is affiliated to the Alsace-Moselle
     scheme when the establishment in which he works is located in these
@@ -3437,7 +3437,7 @@ contrat salarié . régime alsace moselle:
     Attention : c'est une **simplification** : l'affiliation est plus compliquée que celà, voir les conditions exactes [sur le site du régime](http://regime-local.fr/salaries/).
   titre.en: Alsace-Moselle scheme
   titre.fr: Régime Alsace-Moselle
-contrat salarié . régime des impatriés:
+salarié . régime des impatriés:
   description.en: >
     If you are an employee or a director with the 'assimilé-salarié' social and
     fiscal scheme, and if you have been called upon by a foreign company to take
@@ -3471,7 +3471,7 @@ contrat salarié . régime des impatriés:
   question.fr: Le salarié bénéficie-t-il du régime des impatriés ?
   titre.en: impatriate scheme
   titre.fr: régime des impatriés
-contrat salarié . régime des impatriés . information:
+salarié . régime des impatriés . information:
   description.en: >-
     [automatic] In order to benefit from the exemption from old-age
     contributions, the following conditions must be met:
@@ -3494,7 +3494,7 @@ contrat salarié . régime des impatriés . information:
     [Lire le texte de loi](https://www.legifrance.gouv.fr/affichCode.do;jsessionid=F5CFB7C90D1D1F529A2CDC9FFD20BD6E.tplgfr34s_3?idSectionTA=LEGISCTA000038510929&cidTexte=LEGITEXT000006073189&dateTexte=20190626)
   titre.en: '[automatic] information'
   titre.fr: information
-contrat salarié . rémunération:
+salarié . rémunération:
   description.en: The remuneration is distinguished from the salary by including
     non-monetary benefits paid for work. It is therefore wider than the sums of
     money received by the employee.
@@ -3503,7 +3503,7 @@ contrat salarié . rémunération:
     plus large que les sommes d'argent versées au salarié.
   titre.en: Remuneration
   titre.fr: rémunération
-contrat salarié . rémunération . assiette congés payés:
+salarié . rémunération . assiette congés payés:
   description.en: >-
     [automatic] During his or her leave, the employee does not receive his or
     her salary. He or she receives holiday pay.
@@ -3516,7 +3516,7 @@ contrat salarié . rémunération . assiette congés payés:
     Toutes les sommes ayant le caractère de salaire sont prises en compte pour déterminer l'indemnité de congés payés. Les autres sommes ne sont pas prise en compte.
   titre.en: '[automatic] Basis for the calculation of holiday pay allowance'
   titre.fr: Assiette pour le calcul de l'indemnité de congés payés
-contrat salarié . rémunération . assiette de vérification du SMIC:
+salarié . rémunération . assiette de vérification du SMIC:
   description.en: >
     This is the salary taken into account to verify that the minimum wage is
     reached.
@@ -3533,7 +3533,7 @@ contrat salarié . rémunération . assiette de vérification du SMIC:
     incluons pas dans cette formule.
   titre.en: minimum wage verification base
   titre.fr: assiette de vérification du SMIC
-contrat salarié . rémunération . avantages en nature:
+salarié . rémunération . avantages en nature:
   description.en: >
     [automatic] Benefits in kind consist of the provision by the undertaking to
     its employees of a good or service. The provision may be free of charge or
@@ -3559,14 +3559,14 @@ contrat salarié . rémunération . avantages en nature:
     téléphone, réductions, logement...) ?
   titre.en: Benefits in kind
   titre.fr: Avantages en nature
-contrat salarié . rémunération . avantages en nature . autres:
+salarié . rémunération . avantages en nature . autres:
   question.en: |
     Are there any other advantages in kind (housing, vehicle, discount...)?
   question.fr: |
     Y a-t-il d'autres avantages en natures (logement, véhicule, réduction...) ?
   titre.en: others
   titre.fr: autres
-contrat salarié . rémunération . avantages en nature . autres . montant:
+salarié . rémunération . avantages en nature . autres . montant:
   question.en: |
     How much is the amount of these other benefits?
   question.fr: |
@@ -3575,7 +3575,7 @@ contrat salarié . rémunération . avantages en nature . autres . montant:
   suggestions.🚗 véhicule.fr: 🚗 véhicule
   titre.en: '[automatic] others'
   titre.fr: autres
-contrat salarié . rémunération . avantages en nature . montant:
+salarié . rémunération . avantages en nature . montant:
   description.en: >
     Benefits in kind are subject to contributions and income tax. They are taken
     into account to verify that the minimum wage is reached.
@@ -3585,7 +3585,7 @@ contrat salarié . rémunération . avantages en nature . montant:
     atteint.
   titre.en: '[automatic] Benefits in kind'
   titre.fr: Avantages en nature
-contrat salarié . rémunération . avantages en nature . nourriture:
+salarié . rémunération . avantages en nature . nourriture:
   description.en: >
     [automatic] Restaurant vouchers are not considered a benefit in kind but a
     reimbursement of expenses.
@@ -3598,10 +3598,10 @@ contrat salarié . rémunération . avantages en nature . nourriture:
     L'entreprise fournit-elle gratuitement des repas ?
   titre.en: food
   titre.fr: nourriture
-contrat salarié . rémunération . avantages en nature . nourriture . montant:
+salarié . rémunération . avantages en nature . nourriture . montant:
   titre.en: food
   titre.fr: nourriture
-contrat salarié . rémunération . avantages en nature . nourriture . repas par mois:
+salarié . rémunération . avantages en nature . nourriture . repas par mois:
   question.en: |
     [automatic] How many meals per month are paid for by the company?
   question.fr: |
@@ -3612,7 +3612,7 @@ contrat salarié . rémunération . avantages en nature . nourriture . repas par
   suggestions.2 par jour.fr: 2 par jour
   titre.en: meal per month
   titre.fr: repas par mois
-contrat salarié . rémunération . avantages en nature . ntic:
+salarié . rémunération . avantages en nature . ntic:
   description.en: >
     [automatic] The private use of NICT tools made available in the context of
     the professional activity on a permanent basis constitutes a benefit in
@@ -3644,7 +3644,7 @@ contrat salarié . rémunération . avantages en nature . ntic:
     téléphone, tablette, etc.) ?
   titre.en: nict
   titre.fr: ntic
-contrat salarié . rémunération . avantages en nature . ntic . abonnements:
+salarié . rémunération . avantages en nature . ntic . abonnements:
   question.en: What is the cost of the subscription price charged by the employer?
   question.fr: Quel est le coût de l'abonnement (forfait mobile, etc.) pris en
     charge par l'employeur ?
@@ -3656,7 +3656,7 @@ contrat salarié . rémunération . avantages en nature . ntic . abonnements:
   suggestions.standard.fr: standard
   titre.en: subscription
   titre.fr: abonnements
-contrat salarié . rémunération . avantages en nature . ntic . coût appareils:
+salarié . rémunération . avantages en nature . ntic . coût appareils:
   question.en: |
     What is the total new cost of the equipment provided?
   question.fr: |
@@ -3671,7 +3671,7 @@ contrat salarié . rémunération . avantages en nature . ntic . coût appareils
   suggestions.📱✨ (haut de gamme).fr: 📱✨ (haut de gamme)
   titre.en: devices cost
   titre.fr: coût appareils
-contrat salarié . rémunération . avantages en nature . ntic . montant:
+salarié . rémunération . avantages en nature . ntic . montant:
   description.en: >
     For benefits in kind such as NICTs (computers, smartphones, tablets...),
     there is an annual flat-rate assessment corresponding to 10% of the purchase
@@ -3701,7 +3701,7 @@ contrat salarié . rémunération . avantages en nature . ntic . montant:
      soit 10,08€
   titre.en: NICTs tools
   titre.fr: outils NTIC
-contrat salarié . rémunération . brut:
+salarié . rémunération . brut:
   description.en: >
     This is the effective base salary, including all benefits, for the purpose
     of computing social costs.
@@ -3709,7 +3709,7 @@ contrat salarié . rémunération . brut:
     échange de son travail.
   titre.en: gross salary with benefits
   titre.fr: Rémunération brute
-contrat salarié . rémunération . brut de base:
+salarié . contrat . salaire brut:
   description.en: >-
     This is the negociated salary written on the employment contract in France.
     It normally includes bonuses computed on a monthly basis.
@@ -3732,14 +3732,14 @@ contrat salarié . rémunération . brut de base:
   suggestions.salaire médian.fr: salaire médian
   titre.en: Gross salary
   titre.fr: Salaire brut
-contrat salarié . rémunération . brut de base . équivalent temps plein:
+salarié . contrat . salaire brut . équivalent temps plein:
   question.en: What is the full-time equivalent salary?
   question.fr: Quel est le salaire en équivalent temps plein ?
   résumé.en: Salary if hired on a full-time basis
   résumé.fr: Le salaire si l'embauche se faisait à temps plein
   titre.en: Full-time equivalent gross salary
   titre.fr: Salaire brut équivalent temps plein
-contrat salarié . rémunération . contrôle salaire élevé:
+salarié . contrat . salaire brut . contrôle salaire élevé:
   description.en: '[automatic] The monthly salary entered is high. Have you
     entered the wrong payroll period?'
   description.fr:
@@ -3747,22 +3747,22 @@ contrat salarié . rémunération . contrôle salaire élevé:
     de période de calcul ?
   titre.en: '[automatic] high wage control'
   titre.fr: contrôle salaire élevé
-contrat salarié . rémunération . contrôle smic:
+salarié . rémunération . contrôle smic:
   description.en: '[automatic] The wage entered is below the minimum wage.'
   description.fr: Le salaire saisi est inférieur au SMIC.
   titre.en: '[automatic] smic control'
   titre.fr: contrôle smic
-contrat salarié . rémunération . heures complémentaires:
+salarié . rémunération . heures complémentaires:
   description.en: '[automatic] Compensation for overtime'
   description.fr: La rémunération relative aux heures complémentaires
   titre.en: '[automatic] overtime pay'
   titre.fr: rémunération heures complémentaires
-contrat salarié . rémunération . heures supplémentaires:
+salarié . rémunération . heures supplémentaires:
   description.en: Overtime compensation
   description.fr: La rémunération relative aux heures supplémentaires
   titre.en: overtime compensation
   titre.fr: rémunération heures supplémentaires
-contrat salarié . rémunération . net:
+salarié . rémunération . net:
   description.en: >-
     [automatic] This is the amount the employee would receive at the end of the
     month before paying income tax.
@@ -3785,7 +3785,7 @@ contrat salarié . rémunération . net:
   résumé.fr: Salaire net avant impôt
   titre.en: Net salary
   titre.fr: Salaire net
-contrat salarié . rémunération . net après impôt:
+salarié . rémunération . net après impôt:
   description.en: >-
     Net salary after deduction of the **neutral** income tax (also called
     non-personalized rate).
@@ -3810,13 +3810,13 @@ contrat salarié . rémunération . net après impôt:
   résumé.fr: Versé sur le compte bancaire
   titre.en: Net salary after income tax
   titre.fr: Salaire net après impôt
-contrat salarié . rémunération . net avec revenus de remplacement:
+salarié . rémunération . net avec revenus de remplacement:
   titre.en: '[automatic] net with replacement income'
   titre.fr: net avec revenus de remplacement
-contrat salarié . rémunération . net de cotisations:
+salarié . rémunération . net de cotisations:
   titre.en: Remuneration after contributions
   titre.fr: Salaire net de cotisations
-contrat salarié . rémunération . net imposable:
+salarié . rémunération . net imposable:
   description.en: >
     The net salary less tax deductible social contributions and more taxable
     social benefits. It's the basis used to compute income tax.
@@ -3824,10 +3824,10 @@ contrat salarié . rémunération . net imposable:
     C'est la base utilisée pour calculer l'impôt sur le revenu.
   titre.en: Net taxable salary
   titre.fr: Salaire net imposable
-contrat salarié . rémunération . net imposable . heures supplémentaires et complémentaires défiscalisées:
+salarié . rémunération . net imposable . heures supplémentaires et complémentaires défiscalisées:
   titre.en: tax-free overtime hours
   titre.fr: heures supplémentaires et complémentaires défiscalisées
-contrat salarié . rémunération . primes:
+salarié . rémunération . primes:
   description.en: |
     contrat de travail, de la convention collective, d'un usage d'entreprise, ou
     bien à titre bénévole par l'employeur.
@@ -3843,7 +3843,7 @@ contrat salarié . rémunération . primes:
     sur le revenu.
   titre.en: bonuses
   titre.fr: primes
-contrat salarié . rémunération . primes . activité:
+salarié . rémunération . primes . activité:
   description.en: >
     Bonuses and gratuities paid in return for, or at the time of work, directly
     related to the employee's performance of his work. This is the case, for
@@ -3859,21 +3859,21 @@ contrat salarié . rémunération . primes . activité:
     Ces primes sont prises en compte pour le calcul du salaire minimum
   titre.en: activity bonuses
   titre.fr: primes d'activité
-contrat salarié . rémunération . primes . activité . base:
+salarié . rémunération . primes . activité . base:
   question.en: What is the amount of bonuses related to the employee's activity?
   question.fr: Quel est le montant des primes liées à l'activité du salarié ?
   titre.en: activity bonuses
   titre.fr: primes d'activité
-contrat salarié . rémunération . primes . activité . conventionnelles:
+salarié . rémunération . primes . activité . conventionnelles:
   titre.en: bonuses "conventionnel"
   titre.fr: conventionnelles
-contrat salarié . rémunération . primes . ancienneté:
+salarié . rémunération . primes . ancienneté:
   titre.en: '[automatic] seniority'
   titre.fr: ancienneté
-contrat salarié . rémunération . primes . base:
+salarié . rémunération . primes . base:
   titre.en: base
   titre.fr: base
-contrat salarié . rémunération . primes . fin d'année:
+salarié . rémunération . primes . fin d'année:
   description.en: |
     l'année.
 
@@ -3889,7 +3889,7 @@ contrat salarié . rémunération . primes . fin d'année:
     travail.
   titre.en: Year-end or thirteenth month bonus
   titre.fr: Prime de fin d'année ou de treizième mois
-contrat salarié . rémunération . primes . fin d'année . prime de fin d'année en mois:
+salarié . rémunération . primes . fin d'année . prime de fin d'année en mois:
   note.en: >
     [automatic] Some companies offer an end-of-year bonus on a 13.5, 14 or even
     15-month basis.
@@ -3898,7 +3898,7 @@ contrat salarié . rémunération . primes . fin d'année . prime de fin d'anné
     13,5 mois, 14 mois voire 15 mois.
   titre.en: Christmas bonus in months
   titre.fr: prime de fin d'année en mois
-contrat salarié . rémunération . primes . fin d'année . treizième mois:
+salarié . rémunération . primes . fin d'année:
   description.en: >
     être prévu par la convention collective ou le contrat de travail. Elle est
     généralement versée en fin d'année.
@@ -3910,7 +3910,7 @@ contrat salarié . rémunération . primes . fin d'année . treizième mois:
   question.fr: Le salarié bénéficie-t-il d'un treizième mois ?
   titre.en: thirteenth month
   titre.fr: treizième mois
-contrat salarié . rémunération . revenus de remplacement:
+salarié . rémunération . revenus de remplacement:
   description.en: >-
     [automatic] Replacement income is income received in lieu of work:
     unemployment or short-time working benefits, sickness or accident benefits,
@@ -3937,10 +3937,10 @@ contrat salarié . rémunération . revenus de remplacement:
     L'ajouter abouti à un calcul cyclique (vu qu'elle dépend du montant de la CSG)
   titre.en: '[automatic] replacement revenues'
   titre.fr: revenus de remplacement
-contrat salarié . rémunération . taux horaire:
+salarié . rémunération . taux horaire:
   titre.en: '[automatic] hourly fee'
   titre.fr: taux horaire
-contrat salarié . rémunération . taux horaire . heures supplémentaires:
+salarié . rémunération . taux horaire . heures supplémentaires:
   description.en: >
     [automatic] The hourly rate used to calculate overtime pay. It includes
     benefits in kind and bonuses for work performed.
@@ -3950,7 +3950,7 @@ contrat salarié . rémunération . taux horaire . heures supplémentaires:
     constituant la contrepartie d'un travail fourni.
   titre.en: '[automatic] hourly rate (overtime)'
   titre.fr: taux horaire (heure supplémentaire)
-contrat salarié . rémunération . total:
+salarié . rémunération . total:
   description.en: It is the gross salary, plus the employer contributions. It is
     the total that the employer must in principle plan to pay to employ an
     employee, but in practice certain reductions in contributions and aids may
@@ -3963,12 +3963,12 @@ contrat salarié . rémunération . total:
   résumé.fr: Dépensé par l'entreprise
   titre.en: Total salary
   titre.fr: Total chargé
-contrat salarié . salarié majeur:
+salarié . salarié majeur:
   question.en: Is the employee over 18 (age of majority)?
   question.fr: Le salarié est-il majeur ?
   titre.en: '[automatic] major employee'
   titre.fr: salarié majeur
-contrat salarié . stage:
+salarié . contrat . stage:
   description.en: >
     An employer who employs an intern must pay a minimum bonus to the intern.
     This bonus is partly exempt from social security contributions.
@@ -3977,7 +3977,7 @@ contrat salarié . stage:
     minimale. Celle-ci est en partie exonérée de cotisations sociales.
   titre.en: internship
   titre.fr: stage
-contrat salarié . stage . avertissement:
+salarié . contrat . stage . avertissement:
   description.en: >-
     [automatic] An internship agreement **is not an employment contract**, and
     cannot be concluded to perform a regular task corresponding to a permanent
@@ -3998,7 +3998,7 @@ contrat salarié . stage . avertissement:
     Par ailleurs, une entreprise de moins de 20 salariés ne peut pas accueillir plus de **3&nbsp;stagiaires**, et pas plus de **15% de l’effectif** pour les entreprises de plus de 20 salariés.
   titre.en: '[automatic] warning'
   titre.fr: avertissement
-contrat salarié . stage . contrôle gratification minimale:
+salarié . contrat . stage . contrôle gratification minimale:
   description.en: "[automatic] The remuneration for the traineeship is less than
     the [minimum bonus]
     (https://www.service-public.fr/professionnels-entreprises/vosdroits/F32131)\
@@ -4007,10 +4007,10 @@ contrat salarié . stage . contrôle gratification minimale:
     minimale](https://www.service-public.fr/professionnels-entreprises/vosdroits/F32131).
   titre.en: '[automatic] minimum reward check'
   titre.fr: contrôle gratification minimale
-contrat salarié . stage . gratification minimale:
+salarié . contrat . stage . gratification minimale:
   titre.en: minimum bonus
   titre.fr: gratification minimale
-contrat salarié . statut JEI:
+salarié . cotisations . exonérations . JEI:
   description.en: >-
     [automatic] The status of Young Innovative Company (JEI) was created by the
     2004 Finance Law and allows SMEs under 8 years old devoting at least 15% of
@@ -4053,14 +4053,14 @@ contrat salarié . statut JEI:
             (JEI) ?
   titre.en: JEI status
   titre.fr: Statut JEI
-contrat salarié . statut JEI . exonération de cotisations:
+salarié . cotisations . exonérations . JEI . exonération de cotisations:
   description.en: |
     Exemption for young innovative companies (JEI).
   description.fr: |
     Exonération pour les jeunes entreprises innovantes (JEI).
   titre.en: JEI Exemption
   titre.fr: Exonération JEI
-contrat salarié . statut cadre:
+salarié . statut cadre:
   description.en: >
     [automatic] A corporate executive is an employee or officer of a company
 
@@ -4110,7 +4110,7 @@ contrat salarié . statut cadre:
   question.fr: Le salarié a-t-il le statut cadre ?
   titre.en: cadre status
   titre.fr: statut cadre
-contrat salarié . taxe d'apprentissage:
+salarié . taxe d'apprentissage:
   description.en:
     The apprenticeship tax enables the financing by companies of the
     expenses of apprenticeship and technological and professional training
@@ -4122,7 +4122,7 @@ contrat salarié . taxe d'apprentissage:
     compte ici.
   titre.en: Apprenticeship tax
   titre.fr: taxe d'apprentissage
-contrat salarié . taxe d'apprentissage . assiette:
+salarié . taxe d'apprentissage . assiette:
   description.en: The wages of apprentices are partially exempt in the basis for
     calculating the apprenticeship tax.
   description.fr:
@@ -4130,16 +4130,16 @@ contrat salarié . taxe d'apprentissage . assiette:
     de calcul de la taxe d'apprentissage.
   titre.en: base of the apprenticeship tax
   titre.fr: assiette de la taxe d'apprentissage
-contrat salarié . taxe d'apprentissage . base:
+salarié . taxe d'apprentissage . base:
   titre.en: basic apprenticeship tax
   titre.fr: taxe d'apprentissage de base
-contrat salarié . taxe d'apprentissage . contribution supplémentaire:
+salarié . taxe d'apprentissage . contribution supplémentaire:
   titre.en: additional contribution
   titre.fr: contribution supplémentaire
-contrat salarié . taxe d'apprentissage . csa au taux majoré:
+salarié . taxe d'apprentissage . csa au taux majoré:
   titre.en: CSA at the higher rate
   titre.fr: CSA au taux majoré
-contrat salarié . taxe sur les salaires:
+salarié . taxe sur les salaires:
   description.en: The tax on salaries in France is a progressive tax created in
     1948 that some employers must pay on their employees' salaries.
   description.fr:
@@ -4158,20 +4158,20 @@ contrat salarié . taxe sur les salaires:
     Cette implémentation de la taxe sur les salaires est spécifique aux associations à but non lucratif, elle est donc largement simplifiée. Plein d'autres organisations sont concernées, en fonction de la TVA qu'elles paient. Les associations y sont assujetties automatiquement.
   titre.en: tax on salaries
   titre.fr: taxe sur les salaires
-contrat salarié . taxe sur les salaires . assiette:
+salarié . taxe sur les salaires . assiette:
   titre.en: base
   titre.fr: assiette
-contrat salarié . taxe sur les salaires . assiette de base:
+salarié . taxe sur les salaires . assiette de base:
   titre.en: basis
   titre.fr: assiette de base
-contrat salarié . taxe sur les salaires . barème:
+salarié . taxe sur les salaires . barème:
   note.en: |
     [automatic] We do not implement overseas specific rates.
   note.fr: |
     Nous n'implémentons pas les taux spécifiques pour l'outre-mer
   titre.en: scale
   titre.fr: barème
-contrat salarié . temps de travail:
+salarié . temps de travail:
   description.en: In France, the legal basis for work is 35 hours/week. But a
     large number of existing provisions make it possible to vary this number.
     You can find them on the dedicated page [service-public.fr
@@ -4184,20 +4184,20 @@ contrat salarié . temps de travail:
     dédiée.
   titre.en: working time
   titre.fr: temps de travail
-contrat salarié . temps de travail . base légale:
+salarié . temps de travail . base légale:
   titre.en: legal base
   titre.fr: base légale
-contrat salarié . temps de travail . contrôle 44h max:
+salarié . temps de travail . contrôle 44h max:
   description.en: '[automatic] The average working week may not exceed 44 hours.'
   description.fr: La durée hebdomadaire moyenne de travail ne peut pas dépasser 44h
   titre.en: '[automatic] control 44h max'
   titre.fr: contrôle 44h max
-contrat salarié . temps de travail . contrôle 48h max:
+salarié . temps de travail . contrôle 48h max:
   description.en: '[automatic] The maximum weekly working time may not exceed 48 hours.'
   description.fr: La durée hebdomadaire maximale de travail ne peut pas dépasser 48h
   titre.en: '[automatic] control 48h max'
   titre.fr: contrôle 48h max
-contrat salarié . temps de travail . contrôle heures complémentaires 10 pourcents:
+salarié . temps de travail . heures complémentaires . contrôle heures complémentaires 10 pourcents:
   description.en:
     '[automatic] Unless otherwise provided by agreement, the number
     of overtime hours may not exceed one tenth of the contractual duration of
@@ -4207,7 +4207,7 @@ contrat salarié . temps de travail . contrôle heures complémentaires 10 pourc
     contractuelle du temps partiel.
   titre.en: '[automatic] overtime control 10 percent'
   titre.fr: contrôle heures complémentaires 10 pourcents
-contrat salarié . temps de travail . contrôle heures complémentaires max:
+salarié . temps de travail . contrôle heures complémentaires max:
   description.en:
     '[automatic] Overtime must not cause the employee to work for a
     period greater than or equal to the legal working time (35 hours).'
@@ -4216,7 +4216,7 @@ contrat salarié . temps de travail . contrôle heures complémentaires max:
     (35h)
   titre.en: '[automatic] max. overtime control'
   titre.fr: contrôle heures complémentaires max
-contrat salarié . temps de travail . heures complémentaires:
+salarié . temps de travail . heures complémentaires:
   description.en: >
     [automatic] Overtime hours are the hours worked by a part-time employee in
     excess of his or her contractual working hours. Overtime must not cause the
@@ -4233,7 +4233,7 @@ contrat salarié . temps de travail . heures complémentaires:
     effectuées par mois ?
   titre.en: '[automatic] additional hours'
   titre.fr: heures complémentaires
-contrat salarié . temps de travail . heures complémentaires . majoration:
+salarié . temps de travail . heures complémentaires . majoration:
   description.en: >
     [automatic] Compensation for overtime shall be subject to one or more rates
     of increase, set by a company or establishment collective bargaining
@@ -4252,7 +4252,7 @@ contrat salarié . temps de travail . heures complémentaires . majoration:
   note.fr: Nous n'implémentons pas les taux conventionnels
   titre.en: '[automatic] overtime premium'
   titre.fr: majoration heures complémentaires
-contrat salarié . temps de travail . heures complémentaires . seuil légal:
+salarié . temps de travail . heures complémentaires . seuil légal:
   description.en: >-
     [automatic] Unless otherwise provided by agreement, the number of overtime
     hours may not exceed one tenth of the contractual duration of the part-time
@@ -4266,7 +4266,7 @@ contrat salarié . temps de travail . heures complémentaires . seuil légal:
     Si la convention le permet, les heures complémentaire au delà de ce seuil sont rémunérée avec une majoration de 25%
   titre.en: '[automatic] statutory threshold'
   titre.fr: seuil légal
-contrat salarié . temps de travail . heures supplémentaires:
+salarié . temps de travail . heures supplémentaires:
   description.en: Any hour of work performed, at the employer's request, beyond
     the legal 35-hour limit (or equivalent) is considered overtime. Overtime
     work entitles the employee to more favourable remuneration (higher hourly
@@ -4286,7 +4286,7 @@ contrat salarié . temps de travail . heures supplémentaires:
   suggestions.aucune.fr: aucune
   titre.en: Number of overtime hours
   titre.fr: Nombre d'heures supplémentaires
-contrat salarié . temps de travail . heures supplémentaires . majoration:
+salarié . temps de travail . heures supplémentaires . majoration:
   description.en: >-
     Overtime pay is subject to one or more increase rates, fixed by collective
     agreement or agreement of the company or establishment (or, failing that, by
@@ -4320,28 +4320,28 @@ contrat salarié . temps de travail . heures supplémentaires . majoration:
     `contact@mon-entreprise.beta.gouv.fr`
   titre.en: overtime increase
   titre.fr: majoration heures supplémentaires
-contrat salarié . temps de travail . quotité de travail:
+salarié . temps de travail . quotité:
   description.en: Working time as a proportion of legal full time.
   description.fr: Temps de travail en proportion du temps complet légal.
   titre.en: work share
-  titre.fr: quotité de travail
-contrat salarié . temps de travail . quotité de travail effective:
+  titre.fr: quotité
+salarié . temps de travail . effectif . quotité:
   description.en: '[automatic] The social security ceiling must be pro-rated by
     removing absences and days spent on short-time work.'
   description.fr: Le plafond de la sécurité sociale doit être pro-ratisé en
     retirant les absences ainsi que les jours passés au chômage partiel.
   titre.en: '[automatic] effective work share'
-  titre.fr: quotité de travail effective
-contrat salarié . temps de travail . temps contractuel:
+  titre.fr: effectif . quotité
+salarié . contrat . temps de travail:
   titre.en: contractual time
   titre.fr: temps contractuel
-contrat salarié . temps de travail . temps contractuel . temps hebdomadaire:
+salarié . contrat . temps de travail . temps hebdomadaire:
   titre.en: weekly time
   titre.fr: temps hebdomadaire
-contrat salarié . temps de travail . temps effectif:
+salarié . temps de travail . effectif:
   titre.en: '[automatic] actual time'
   titre.fr: temps effectif
-contrat salarié . temps de travail . temps partiel:
+salarié . contrat . temps de travail . temps partiel:
   description.en: >
     Two contracts at the same salary, one part-time and the other full-time, may
     give rise to different contribution amounts.
@@ -4357,12 +4357,12 @@ contrat salarié . temps de travail . temps partiel:
   question.fr: Le contrat est-il à temps partiel ?
   titre.en: part-time
   titre.fr: temps partiel
-contrat salarié . temps de travail . temps partiel . contrôle temps max:
+salarié . contrat . temps de travail . temps partiel . contrôle temps max:
   description.en: '[automatic] Part-time work must be below the legal working time (35 hours).'
   description.fr: Un temps partiel doit être en dessous de la durée de travail légale (35h)
   titre.en: '[automatic] max time control'
   titre.fr: contrôle temps max
-contrat salarié . temps de travail . temps partiel . contrôle temps min:
+salarié . contrat . temps de travail . temps partiel . contrôle temps min:
   description.en: '[automatic] The minimum number of hours per week is 24,
     although it is possible to go lower in some cases only. [More
     info](https://www.service-public.fr/particuliers/vosdroits/F32428).'
@@ -4371,7 +4371,7 @@ contrat salarié . temps de travail . temps partiel . contrôle temps min:
     d'infos](https://www.service-public.fr/particuliers/vosdroits/F32428).
   titre.en: '[automatic] min time control'
   titre.fr: contrôle temps min
-contrat salarié . temps de travail . temps partiel . heures par semaine:
+salarié . contrat . temps de travail . temps partiel . heures par semaine:
   question.en: What is the number of hours worked per week as part of part-time work?
   question.fr: Quel est le nombre d'heures travaillées par semaine dans le cadre
     du temps partiel ?
@@ -4381,12 +4381,12 @@ contrat salarié . temps de travail . temps partiel . heures par semaine:
   suggestions.mi-temps.fr: mi-temps
   titre.en: hours per week
   titre.fr: heures par semaine
-contrat salarié . versement transport:
+salarié . versement transport:
   description.en: Contribution based on the salaries to finance public transports.
   description.fr: Contribution sur les salaires destinée au financement des transports publics.
   titre.en: Transport tax
   titre.fr: versement transport
-contrat salarié . vieillesse:
+salarié . vieillesse:
   description.en: Contribution to the basic pension plan of employees.
   description.fr: Cotisation au régime de retraite de base des salariés.
   titre.en: Basic pension contribution

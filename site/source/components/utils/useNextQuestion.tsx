@@ -1,3 +1,11 @@
+import { Simulation, SimulationConfig } from '@/reducers/rootReducer'
+import {
+	answeredQuestionsSelector,
+	configSelector,
+	currentQuestionSelector,
+	objectifsSelector,
+	situationSelector,
+} from '@/selectors/simulationSelectors'
 import { DottedName } from 'modele-social'
 import {
 	add,
@@ -24,14 +32,6 @@ import {
 } from 'ramda'
 import { useContext, useMemo } from 'react'
 import { useSelector } from 'react-redux'
-import { Simulation, SimulationConfig } from '@/reducers/rootReducer'
-import {
-	answeredQuestionsSelector,
-	configSelector,
-	currentQuestionSelector,
-	objectifsSelector,
-	situationSelector,
-} from '@/selectors/simulationSelectors'
 import { EngineContext } from './EngineContext'
 
 type MissingVariables = Partial<Record<DottedName, number>>
@@ -105,7 +105,7 @@ export function getNextQuestions(
 
 	const lastStep = last(answeredQuestions)
 	// L'ajout de la réponse permet de traiter les questions dont la réponse est
-	// "une possibilité", exemple "contrat salarié . cdd"
+	// "une possibilité", exemple "salarié . contrat . CDD"
 	const lastStepWithAnswer =
 		lastStep && situation[lastStep]
 			? ([lastStep, situation[lastStep]]
