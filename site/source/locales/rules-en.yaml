@@ -3171,10 +3171,10 @@ salarié . cotisations . employeur . réductions . secteurs d'activité:
 salarié . cotisations . employeur . réductions . écart au plafond de l'assiette:
   titre.en: deviation from the base ceiling
   titre.fr: écart au plafond de l'assiette
-salarié . cotisations . employeur . réductions . éligible barème compétitivité:
+salarié . cotisations . employeur . réductions . barème compétitivité:
   titre.en: Eligibility for the competitiveness scale
   titre.fr: Eligibilité au barème de compétitivité
-salarié . cotisations . employeur . réductions . éligible barème compétitivité renforcée:
+salarié . cotisations . employeur . réductions . barème compétitivité renforcée:
   description.en: >
     - Turnover of less than 50 million euros 
 
@@ -3194,8 +3194,8 @@ salarié . cotisations . employeur . réductions . éligible barème compétitiv
   question.en: Are you eligible for the enhanced competitiveness scale?
   question.fr: Êtes-vous éligibles au barème compétitivité renforcée ?
   titre.en: eligible to enhanced competitiveness scale
-  titre.fr: éligible barème compétitivité renforcée
-salarié . cotisations . employeur . réductions . éligible barème innovation et croissance:
+  titre.fr: barème compétitivité renforcée
+salarié . cotisations . employeur . réductions . barème innovation et croissance:
   description.en: >-
     - Employers with less than 250 employees and an annual turnover of less than
     €50 million are eligible for this scale as compensation for employees who
@@ -3230,7 +3230,7 @@ salarié . cotisations . employeur . réductions . éligible barème innovation 
   question.en: Are you eligible for the innovation and growth scale?
   question.fr: Êtes-vous éligibles au barème innovation et croissance ?
   titre.en: eligible to innovation and growth scale
-  titre.fr: éligible barème innovation et croissance
+  titre.fr: barème innovation et croissance
 salarié . maladie:
   description.en: Contributions to the national health insurance
   description.fr: Cotisations de la branche maladie

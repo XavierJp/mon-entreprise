@@ -262,7 +262,7 @@ exports[`calculate simulations-salarié > impôt sur le revenu 3`] = `
 Notifications affichées : salarié . contrat . CDD . information"
 `;
 
-exports[`calculate simulations-salarié > impôt sur le revenu 4`] = `"[3782,0,3000,2353,2252]"`;
+exports[`calculate simulations-salarié > impôt sur le revenu 4`] = `"[3784,0,3000,2353,2252]"`;
 
 exports[`calculate simulations-salarié > impôt sur le revenu 5`] = `
 "[41833,0,30000,24227,14685]
@@ -285,43 +285,43 @@ exports[`calculate simulations-salarié > inversions 2`] = `"[3426,0,2554,2000,1
 exports[`calculate simulations-salarié > inversions 3`] = `"[3668,0,2703,2117,2000]"`;
 
 exports[`calculate simulations-salarié > lodeom 1`] = `
-"[1588,0,1521,1182,1182]
+"[1521,0,1521,1182,1182]
 Notifications affichées : salarié . rémunération . contrôle smic"
 `;
 
-exports[`calculate simulations-salarié > lodeom 2`] = `"[2081,0,2000,1561,1527]"`;
+exports[`calculate simulations-salarié > lodeom 2`] = `"[2000,0,2000,1561,1527]"`;
 
-exports[`calculate simulations-salarié > lodeom 3`] = `"[3782,0,3000,2353,2168]"`;
+exports[`calculate simulations-salarié > lodeom 3`] = `"[3784,0,3000,2353,2168]"`;
 
 exports[`calculate simulations-salarié > lodeom 4`] = `"[5428,0,4000,3146,2755]"`;
 
 exports[`calculate simulations-salarié > lodeom 5`] = `"[7784,0,5500,4349,3634]"`;
 
 exports[`calculate simulations-salarié > lodeom compétitivité renforcée 1`] = `
-"[1588,0,1521,1182,1182]
+"[1521,0,1521,1182,1182]
 Notifications affichées : salarié . rémunération . contrôle smic"
 `;
 
-exports[`calculate simulations-salarié > lodeom compétitivité renforcée 2`] = `"[2081,0,2000,1561,1527]"`;
+exports[`calculate simulations-salarié > lodeom compétitivité renforcée 2`] = `"[2000,0,2000,1561,1527]"`;
 
-exports[`calculate simulations-salarié > lodeom compétitivité renforcée 3`] = `"[3281,0,3000,2353,2168]"`;
+exports[`calculate simulations-salarié > lodeom compétitivité renforcée 3`] = `"[3000,0,3000,2353,2168]"`;
 
-exports[`calculate simulations-salarié > lodeom compétitivité renforcée 4`] = `"[5186,0,4000,3146,2755]"`;
+exports[`calculate simulations-salarié > lodeom compétitivité renforcée 4`] = `"[5023,0,4000,3146,2755]"`;
 
 exports[`calculate simulations-salarié > lodeom compétitivité renforcée 5`] = `"[7784,0,5500,4349,3634]"`;
 
 exports[`calculate simulations-salarié > lodeom innovation et croissance 1`] = `
-"[1588,0,1521,1182,1182]
+"[1521,0,1521,1182,1182]
 Notifications affichées : salarié . rémunération . contrôle smic"
 `;
 
-exports[`calculate simulations-salarié > lodeom innovation et croissance 2`] = `"[2081,0,2000,1561,1527]"`;
+exports[`calculate simulations-salarié > lodeom innovation et croissance 2`] = `"[2000,0,2000,1561,1527]"`;
 
-exports[`calculate simulations-salarié > lodeom innovation et croissance 3`] = `"[3171,0,3000,2353,2168]"`;
+exports[`calculate simulations-salarié > lodeom innovation et croissance 3`] = `"[3000,0,3000,2353,2168]"`;
 
-exports[`calculate simulations-salarié > lodeom innovation et croissance 4`] = `"[4529,0,4000,3146,2755]"`;
+exports[`calculate simulations-salarié > lodeom innovation et croissance 4`] = `"[4472,0,4000,3146,2755]"`;
 
-exports[`calculate simulations-salarié > lodeom innovation et croissance 5`] = `"[7643,0,5500,4349,3634]"`;
+exports[`calculate simulations-salarié > lodeom innovation et croissance 5`] = `"[7617,0,5500,4349,3634]"`;
 
 exports[`calculate simulations-salarié > stage 1`] = `
 "[500,0,500,500,500]
