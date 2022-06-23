@@ -32,7 +32,10 @@
 		"i18n:translate": "yarn workspace site i18n:translate"
 	},
 	"resolutions": {
-		"@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
+		"@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+		"@publicodes/api": "portal:/home/johan/Projets/publicodes/packages/api",
+		"publicodes": "portal:/home/johan/Projets/publicodes/packages/core",
+		"publicodes-react": "portal:/home/johan/Projets/publicodes/packages/react-ui"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.25.0",
