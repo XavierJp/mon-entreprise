@@ -25,6 +25,7 @@ import React, { useContext, useEffect } from 'react'
 import { Trans } from 'react-i18next'
 import { useDispatch, useSelector } from 'react-redux'
 import { TrackPage } from '../../ATInternetTracking'
+import { JeDonneMonAvis } from '../JeDonneMonAvis'
 import { FromTop } from '../ui/animate'
 import AnswerList from './AnswerList'
 import { ExplicableRule } from './Explicable'
@@ -163,6 +164,7 @@ export default function Conversation({
 								</Trans>
 							)}
 						</Body>
+						<JeDonneMonAvis />
 						<Grid container spacing={2}>
 							{previousAnswers.length > 0 && (
 								<Grid item xs={6} sm="auto">

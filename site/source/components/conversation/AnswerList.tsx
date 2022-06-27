@@ -23,6 +23,7 @@ import { Trans, useTranslation } from 'react-i18next'
 import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components'
 import Value from '../EngineValue'
+import { JeDonneMonAvis } from '../JeDonneMonAvis'
 import { ExplicableRule } from './Explicable'
 import RuleInput from './RuleInput'
 
@@ -97,6 +98,8 @@ export default function AnswerList({ onClose, children }: AnswerListProps) {
 							<Emoji emoji="🗑" /> <Trans>Effacer mes réponses</Trans>
 						</Button>
 					</div>
+					<Spacing md />
+					<JeDonneMonAvis />
 				</>
 			)}
 			{companyQuestions.length > 0 && (
